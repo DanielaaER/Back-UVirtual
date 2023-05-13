@@ -1,97 +1,43 @@
-name: release CI, CD workflow 
-on: 
+name: Deploy to Oketo
+
+on:
   push:
-    branches: [ "master"]
-  pull_request:
-    branches: [ "master"]
+    branches:
+      - main
+
 jobs:
-  release:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Set up Python 3.7
-        uses: actions/setup-python@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build Docker image
+        uses: docker/build-push-action@v2
         with:
-          python-version: '3.7'
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Create .env file
-        run: |
-          echo "SECRET_KEY=${{ secrets.SECRET_KEY }}" >> .env
-          echo "LOCAL_DB_USER=${{ secrets.LOCAL_DB_USER }}" >> .env
-          echo "LOCAL_DB_PASSWORD=${{ secrets.LOCAL_DB_PASSWORD }}" >> .env
-          echo "LOCAL_DB_HOST=${{ secrets.LOCAL_DB_HOST }}" >> .env
-          echo "LOCAL_DB_PORT=${{ secrets.LOCAL_DB_PORT }}" >> .env
-          echo "LOCAL_DB_NAME=${{ secrets.LOCAL_DB_NAME }}" >> .env
-      
-      - name: show dir, .env file
-        run: |
-          ls -la 
-          
-      - name: start MySQL container
-        env:
-          MYSQL_ROOT_PASSWORD: ${{ secrets.LOCAL_DB_PASSWORD }}
-          MYSQL_DATABASE: ${{ secrets.LOCAL_DB_NAME }}
-          MYSQL_USER: ${{ secrets.LOCAL_DB_USER }}
-          MYSQL_PASSWORD: ${{ secrets.LOCAL_DB_PASSWORD }}
-        run: |
-          docker run -d \
-            --name mysql \
-            -e MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD \
-            -e MYSQL_DATABASE=$MYSQL_DATABASE \
-            -e MYSQL_USER=$MYSQL_USER \
-            -e MYSQL_PASSWORD=$MYSQL_PASSWORD \
-            mysql:8.0
-          
-          
-      - name: download httpd image, container name serving_base
-        run: |
-          docker run -d --name serving_base httpd
-          
-      - name: Build the custom Docker image
-        run: docker commit --change "ENV MODEL_NAME ${{secrets.MODEL_NAME}}" serving_base ${{secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}}
-
-      - name: show docker images
-        run: docker images
-
-      - name: docker login
-        env:
-          DOCKER_USER: ${{secrets.DOCKER_USER}}
-          DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-        run: |
-          docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
-          
-      - name: Docker Push
-        run: docker push ${{secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}}
-      
-      - name: update docker user in k8 
-        run: sed -i 's/{docker_user}/${{secrets.DOCKER_USER}}/g' manifests/k8s.yaml
-
-      - name: update model name in k8 
-        run: sed -i 's/{model_name}/${{secrets.MODEL_NAME}}/g' manifests/k8s.yaml
-
-      - name: update _ by - 
-        run: sed -i 's/_/-/g' manifests/k8s.yaml
-
-      - name: update sha in k8
-        run: sed -i 's/{github.sha}/${{github.sha}}/g' manifests/k8s.yaml
-
-      - name: ls -la 
-        run: cat manifests/k8s.yaml
-      - uses: okteto/context@2.7.0
+          context: .
+          push: true
+          tags: my-username/my-fastapi-image:latest
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1
         with:
-          token: ${{secrets.OKTETO_TOKEN }}
-
-      - name: Deploy and Wait
-        uses: okteto/actions/deploy@v1
-        env:
-          KUBECONFIG: ${{ steps.namespace.outputs.kubeconfig }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Push to Oketo
+        uses: okteto/action@v2
         with:
-          namespace: ${{secrets.OKTETO_NAMESPACE }}
-          manifest: manifests/k8s.yaml
-          tag: ${{ secrets.DOCKER_USERNAME }}/${{secrets.MODEL_NAME}}:${{github.sha}}
+          token: ${{ secrets.OKTETO_TOKEN }}
+          manifest: okteto.yml
+      - name: Create and deploy database
+        uses: okteto/db@v1
+        with:
+          token: ${{ secrets.OKTETO_TOKEN }}
+          name: my-database
+          image: mysql:5.7
+          env: |
+            MYSQL_ROOT_PASSWORD=my-root-password
+            MYSQL_DATABASE=my-database-name
+          port: 3306
+          replicas: 1
+      - name: Update environment variables
+        run: |
+          echo "DATABASE_URL=mysql://root:my-root-password@my-database:3306/my-database-name" >> $GITHUB_ENV
