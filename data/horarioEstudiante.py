@@ -20,39 +20,41 @@ from data.clase import dict_clasee
 
 
 def get_horarioEstudiantee():
-    result = conn.execute(horarioEstudiantes.select()).fetchall()
-            
-    horario_list = []
-    for row in result:
-        horario_dict = {
-            "id": row[0],
-            "id_estudiante": row[1],
-            "clase_id": row[2]
-        }
+    with engine.connect() as conn:
+        result = conn.execute(horarioEstudiantes.select()).fetchall()
+                
+        horario_list = []
+        for row in result:
+            horario_dict = {
+                "id": row[0],
+                "id_estudiante": row[1],
+                "clase_id": row[2]
+            }
 
-        horario = HorarioEstudiante(**horario_dict)
-        horario_list.append(horario_dict)
+            horario = HorarioEstudiante(**horario_dict)
+            horario_list.append(horario_dict)
 
-    if (result):
-        logging.info(f"Se obtuvo información de todas las clases")
-        return horario_list
-    else:
-        return Response(status_code=HTTP_204_NO_CONTENT)
+        if (result):
+            logging.info(f"Se obtuvo información de todas las clases")
+            return horario_list
+        else:
+            return Response(status_code=HTTP_204_NO_CONTENT)
 
 
 def get_horarioEstudiantees(id_estudiante):
+    with engine.connect() as conn:
     
-    sql = text(
-        f"select clases.id, clases.nrc, clases.nombre, clases.academico, clases.facultad, clases.campus, clases.edificio, clases.aula, clases.lunes, clases.martes, clases.miercoles, clases.jueves, clases.viernes, clases.sabado from horarioEstudiantes inner join clases on horarioEstudiantes.id_clase=clases.id inner join estudiantes on estudiantes.id = horarioEstudiantes.id_estudiante where horarioEstudiantes.id_estudiante='{id_estudiante}'")
-            
-    result = conn.execute(sql).fetchall()
-    if result:
-        horario_list = []
-        for row in result:
-            clase = dict_clasee(row)
-            horario_list.append(clase)
-        print(horario_list)
-        logging.info(f"Se obtuvo información de todas las clases")
-        return horario_list
-    else:
-        return Response(status_code=HTTP_204_NO_CONTENT)
+        sql = text(
+            f"select clases.id, clases.nrc, clases.nombre, clases.academico, clases.facultad, clases.campus, clases.edificio, clases.aula, clases.lunes, clases.martes, clases.miercoles, clases.jueves, clases.viernes, clases.sabado from horarioEstudiantes inner join clases on horarioEstudiantes.id_clase=clases.id inner join estudiantes on estudiantes.id = horarioEstudiantes.id_estudiante where horarioEstudiantes.id_estudiante='{id_estudiante}'")
+                
+        result = conn.execute(sql).fetchall()
+        if result:
+            horario_list = []
+            for row in result:
+                clase = dict_clasee(row)
+                horario_list.append(clase)
+            print(horario_list)
+            logging.info(f"Se obtuvo información de todas las clases")
+            return horario_list
+        else:
+            return Response(status_code=HTTP_204_NO_CONTENT)

@@ -27,8 +27,7 @@ horarioAulaRouter = APIRouter()
 @horarioAulaRouter.get("/horarioAula", response_model=List[HorarioAula])
 def get_horarioAula():
     try:
-        with engine.connect() as conn:
-            return get_horarioAulaas
+        return get_horarioAulaas()
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de las clases ||| {exception_error}")
@@ -38,19 +37,17 @@ def get_horarioAula():
 @horarioAulaRouter.get("/horarioAula/horarioAula/{id_aula}", response_model=List[Clase])
 def get_HorarioAula_by_id(id_aula: int):
     try:
-        with engine.connect() as conn:
-            return get_id_horarioAulaa(id_aula)
+        return get_id_horarioAulaa(id_aula)
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de las clases ||| {exception_error}")
         return Response(status_code=SERVER_ERROR)
 
 
-@horarioAulaRouter.get("/horarioAula/horarioAulas/{id_aula}", response_model=List[Clase])
+@horarioAulaRouter.get("/horarioAula/horarioAula/hora/{id_aula}", response_model=List[Clase])
 def get_HorarioAula_by_id_aula_hour(id_aula: int):
     try:
-        with engine.connect() as conn:
-            return get_aula_hour_HorarioAulaa(id_aula)
+        return get_aula_hour_HorarioAulaa(id_aula)
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de las clases ||| {exception_error}")

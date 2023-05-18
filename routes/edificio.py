@@ -25,8 +25,8 @@ edificioRouter = APIRouter()
 @edificioRouter.get("/edificio", response_model=List[Edificio])
 def get_Edificio():
     try:
-        with engine.connect() as conn:
-            return get_edificioo()
+
+        return get_edificioo()
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de los edificios ||| {exception_error}")

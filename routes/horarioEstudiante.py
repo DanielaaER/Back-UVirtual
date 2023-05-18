@@ -25,8 +25,7 @@ horarioEstudiateRouter = APIRouter()
 @horarioEstudiateRouter.get("/horarioEstudiante", response_model=List[HorarioEstudiante])
 def get_horarioEstudiante():
     try:
-        with engine.connect() as conn:
-            return get_horarioEstudiantee()
+        return get_horarioEstudiantee()
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de las clases ||| {exception_error}")
@@ -36,8 +35,7 @@ def get_horarioEstudiante():
 @horarioEstudiateRouter.get("/horarioEstudiante/horarioEstudiante/{id_estudiante}", response_model=List[Clase])
 def get_HorarioEstudiante_by_Estudiante(id_estudiante: int):
     try:
-        with engine.connect() as conn:
-            return get_horarioEstudiantees(id_estudiante)
+        return get_horarioEstudiantees(id_estudiante)
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de las clases ||| {exception_error}")

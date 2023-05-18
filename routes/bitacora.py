@@ -20,8 +20,8 @@ bitacoraRouter = APIRouter()
 @bitacoraRouter.get("/bitacora", response_model=List[Bitacora])
 def get_bitacora():
     try:
-        with engine.connect() as conn:
-            return get_bitacoraa()
+
+        return get_bitacoraa()
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de las bitacoras ||| {exception_error}")
@@ -31,8 +31,8 @@ def get_bitacora():
 @bitacoraRouter.get("/bitacora/clase/{id_clase}", response_model=List[Bitacora])
 def get_bitacora_by_id(id_clase: int):
     try:
-        with engine.connect() as conn:
-            return get_list_bitacoraa(id_clase)
+
+        return get_list_bitacoraa(id_clase)
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de la clase con el ID : {id_clase} ||| {exception_error}")
@@ -42,9 +42,9 @@ def get_bitacora_by_id(id_clase: int):
 @bitacoraRouter.get("/bitacora/class/dia/{id_clase}/{dia}", response_model=List[Bitacora])
 def get_bitacora_by_id(id_clase: int, dia: str):
     try:
-        with engine.connect() as conn:
-            print("clase y dia")
-            return get_list_day_bitacoraa(id_clase, dia)
+
+        print("clase y dia")
+        return get_list_day_bitacoraa(id_clase, dia)
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de la clase con el ID : {id_clase} ||| {exception_error}")
@@ -54,9 +54,9 @@ def get_bitacora_by_id(id_clase: int, dia: str):
 @bitacoraRouter.get("/bitacora/aula/{id_aula}", response_model=List[Bitacora])
 def get_bitacora_by_id(id_aula: int):
     try:
-        with engine.connect() as conn:
-            return get_list_class_bitacoraa(id_aula)
-            
+
+        return get_list_class_bitacoraa(id_aula)
+
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de la clase con el ID : {id_aula} ||| {exception_error}")
@@ -66,9 +66,9 @@ def get_bitacora_by_id(id_aula: int):
 @bitacoraRouter.get("/bitacora/dia/{id_aula}/{dia}", response_model=List[Bitacora])
 def get_bitacora_by_id_day(id_aula: int, dia: str):
     try:
-        with engine.connect() as conn:
-            print("aula y dia")
-            return get_list_classday_bitacoraa(id_aula, dia)
+
+        print("aula y dia")
+        return get_list_classday_bitacoraa(id_aula, dia)
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de la aula con el ID : {id_aula} ||| {exception_error}")
@@ -78,8 +78,8 @@ def get_bitacora_by_id_day(id_aula: int, dia: str):
 @bitacoraRouter.post("/bitacora/{id_user}/{id_aula}/{id_clase}")
 def registrar_entrada(id_user: str, id_aula: int, id_clase: int):
     try:
-        with engine.connect() as conn:
-            return set_entrada(id_user, id_aula, id_clase)
+
+        return set_entrada(id_user, id_aula, id_clase)
     except Exception as exception_error:
         logging.error(
             f"Error al crear la clase  ||| {exception_error}")

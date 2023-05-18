@@ -14,8 +14,7 @@ aulaRouter = APIRouter()
 @aulaRouter.get("/aula", response_model=List[Aula])
 def get_aula():
     try:
-        with engine.connect() as conn:
-            return get_aulas()
+        return get_aulas()
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de los edificios ||| {exception_error}")

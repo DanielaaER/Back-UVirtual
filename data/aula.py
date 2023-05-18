@@ -10,20 +10,21 @@ from models.aula import aulas
 from schemas.aula import Aula
 
 def get_aulas():
-    result = conn.execute(aulas.select()).fetchall()
-    aula_list = []
-    for row in result:
-        aula_dict = {
-            "id": row[0],
-            "nombre": row[1],
-            "id_edificio": row[2]
-        }
-        aula = Aula(**aula_dict)
-        aula_list.append(aula_dict)
-    
-    if (result):
-        logging.info(f"Se obtuvo información de todos los edifcios")
+    with engine.connect() as conn:
+        result = conn.execute(aulas.select()).fetchall()
+        aula_list = []
+        for row in result:
+            aula_dict = {
+                "id": row[0],
+                "nombre": row[1],
+                "id_edificio": row[2]
+            }
+            aula = Aula(**aula_dict)
+            aula_list.append(aula_dict)
         
-        return aula_list
-    else:
-        return Response(status_code=HTTP_204_NO_CONTENT)
+        if (result):
+            logging.info(f"Se obtuvo información de todos los edifcios")
+            
+            return aula_list
+        else:
+            return Response(status_code=HTTP_204_NO_CONTENT)
