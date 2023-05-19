@@ -43,7 +43,6 @@ app.include_router(horarioDocenteRouter,
                    tags=["Horario Docente"])
 app.include_router(edificioRouter, tags=["Edificio"])
 app.include_router(aulaRouter, tags=["Aula"])
-app.include_router(horarioAulaRouter, tags=["Aula"])
 
 
 app.include_router(bitacoraRouter, tags=["Bitacoras"])

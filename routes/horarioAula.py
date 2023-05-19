@@ -34,7 +34,7 @@ def get_horarioAula():
         return Response(status_code=SERVER_ERROR)
 
 
-@horarioAulaRouter.get("/horarioAula/horarioAula/{id_aula}", response_model=List[Clase])
+@horarioAulaRouter.get("/horarioAulas/{id_aula}", response_model=List[Clase])
 def get_HorarioAula_by_id(id_aula: int):
     try:
         return get_id_horarioAulaa(id_aula)
@@ -44,8 +44,8 @@ def get_HorarioAula_by_id(id_aula: int):
         return Response(status_code=SERVER_ERROR)
 
 
-@horarioAulaRouter.get("/horarioAula/horarioAula/hora/{id_aula}", response_model=List[Clase])
-def get_HorarioAula_by_id_aula_hour(id_aula: int):
+@horarioAulaRouter.get("/horarioAulas/hora/{id_aula}", response_model=List[Clase])
+def get_HorarioAula_hour(id_aula: int):
     try:
         return get_aula_hour_HorarioAulaa(id_aula)
     except Exception as exception_error:
