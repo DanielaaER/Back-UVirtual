@@ -25,7 +25,7 @@ def get_estudiantes():
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de los estudiantes ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
 
 
 @estudianteRouter.get("/estudiante/estudiante/{id_estudiante}", response_model=Estudiante)
@@ -37,7 +37,7 @@ def get_estudiante_by_id_estudiante(id_estudiante: int):
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información del estudiante con el ID : {id_estudiante} ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
 
 
 @estudianteRouter.post("/estudiantes")
@@ -46,7 +46,7 @@ def create_estudiante(data_estudiante: Estudiante):
 
        return create_estudiantee(data_estudiante)
     except Exception as exception_error:
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
 
 
 @estudianteRouter.post("/estudiante", status_code=HTTP_201_CREATED)

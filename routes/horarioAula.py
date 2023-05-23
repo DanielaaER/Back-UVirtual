@@ -31,7 +31,7 @@ def get_horarioAula():
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de las clases ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
 
 
 @horarioAulaRouter.get("/horarioAulas/{id_aula}", response_model=List[Clase])
@@ -41,7 +41,7 @@ def get_HorarioAula_by_id(id_aula: int):
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de las clases ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
 
 
 @horarioAulaRouter.get("/horarioAulas/hora/{id_aula}", response_model=List[Clase])
@@ -51,4 +51,4 @@ def get_HorarioAula_hour(id_aula: int):
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de las clases ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)

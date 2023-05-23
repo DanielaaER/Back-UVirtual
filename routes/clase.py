@@ -40,7 +40,7 @@ def get_clases():
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de las clases ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
 
 
 @claseRouter.get("/clases/clases/{id_clases}", response_model=Clase)
@@ -51,7 +51,7 @@ def get_clase_by_id_clase(id_clase: int):
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información del estudiante con el ID : {id_clase} ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
 
 
 @claseRouter.post("/clases")
@@ -63,7 +63,7 @@ def create_clase(data_clase: Clase):
     except Exception as exception_error:
         logging.error(
             f"Error al crear la clase  ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
     except Exception as e: 
         print("Error al insertar los datos en la base de datos:", e)
         return Response(content={"mensaje": "Los datos ingresados son incorrectos."}, status_code=HTTP_400_BAD_REQUEST)
@@ -78,4 +78,4 @@ def clases_ingresar_al_sistema(estudiantes_auth: EstudianteAuth):
     except Exception as exception_error:
         logging.error(
             f"Error al crear la clase ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)

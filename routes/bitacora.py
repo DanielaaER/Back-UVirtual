@@ -25,7 +25,7 @@ def get_bitacora():
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de las bitacoras ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
 
 
 @bitacoraRouter.get("/bitacora/clase/{id_clase}", response_model=List[Bitacora])
@@ -36,7 +36,7 @@ def get_bitacora_by_id(id_clase: int):
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de la clase con el ID : {id_clase} ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
 
 
 @bitacoraRouter.get("/bitacora/class/dia/{id_clase}/{dia}", response_model=List[Bitacora])
@@ -48,7 +48,7 @@ def get_bitacora_by_id(id_clase: int, dia: str):
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de la clase con el ID : {id_clase} ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
 
 
 @bitacoraRouter.get("/bitacora/aula/{id_aula}", response_model=List[Bitacora])
@@ -60,7 +60,7 @@ def get_bitacora_by_id(id_aula: int):
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de la clase con el ID : {id_aula} ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
 
 
 @bitacoraRouter.get("/bitacora/dia/{id_aula}/{dia}", response_model=List[Bitacora])
@@ -72,7 +72,7 @@ def get_bitacora_by_id_day(id_aula: int, dia: str):
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de la aula con el ID : {id_aula} ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
 
 
 @bitacoraRouter.post("/bitacora/{id_user}/{id_aula}/{id_clase}")
@@ -83,7 +83,7 @@ def registrar_entrada(id_user: str, id_aula: int, id_clase: int):
     except Exception as exception_error:
         logging.error(
             f"Error al crear la clase  ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
     except Exception as e:
         print("Error al insertar los datos en la base de datos:", e)
         return Response(content={"mensaje": "Los datos ingresados son incorrectos."}, status_code=HTTP_400_BAD_REQUEST)

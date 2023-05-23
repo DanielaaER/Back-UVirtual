@@ -27,7 +27,7 @@ def get_docentes():
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de los docentes ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
 
 
 @docenteRouter.get("/docente/docente/{id_docente}", response_model=Docente)
@@ -38,7 +38,7 @@ def get_docente_by_id_docente(id_docente: int):
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información del docente con el ID : {id_docente} ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
 
 
 @docenteRouter.post("/docentes")
@@ -47,7 +47,7 @@ def create_docente(data_docente: Docente):
 
         return create_docentee(data_docente)
     except Exception as exception_error:
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
     except Exception as e:
         print("Error al insertar los datos en la base de datos:", e)
         return Response(content={"mensaje": "Los datos ingresados son incorrectos."}, status_code=HTTP_400_BAD_REQUEST)
@@ -61,7 +61,7 @@ def docentes_ingresar_al_sistema(estudiantes_auth: EstudianteAuth):
     except Exception as exception_error:
         logging.error(
             f"Error al ingresar docente al sistema ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
 
 
 @docenteRouter.put("/docente/{id_docente}", response_model=DocenteUpdate)
@@ -73,7 +73,7 @@ def update_docente(data_update: DocenteUpdate, id_docente: int):
     except Exception as exception_error:
         logging.error(
             f"Error al actualizar el docente con el ID: {id_docente} ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
 
 
 @docenteRouter.post("/docente/login", status_code=HTTP_201_CREATED)
@@ -84,7 +84,7 @@ def docentes_ingresar_al_sistema(docentes_auth: DocenteAuth):
     except Exception as exception_error:
         logging.error(
             f"Error al ingresar docente al sistema ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
 
 
 @docenteRouter.post("/docente/verify/token")

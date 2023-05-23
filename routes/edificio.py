@@ -30,4 +30,4 @@ def get_Edificio():
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de los edificios ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)

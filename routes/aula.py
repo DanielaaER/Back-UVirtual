@@ -1,4 +1,4 @@
-from xmlrpc.client import SERVER_ERROR
+from xmlrpc.client import 500
 import logging
 from config.db import conn, engine
 from fastapi import APIRouter, Response, Header
@@ -18,4 +18,4 @@ def get_aula():
     except Exception as exception_error:
         logging.error(
             f"Error al obtener información de los edificios ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+        return Response(status_code=500)
