@@ -1,4 +1,4 @@
-from xmlrpc.client import 500
+
 import logging
 from config.db import conn, engine
 from fastapi import APIRouter, Response, Header

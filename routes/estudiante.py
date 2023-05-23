@@ -52,7 +52,9 @@ def create_estudiante(data_estudiante: Estudiante):
 @estudianteRouter.post("/estudiante", status_code=HTTP_201_CREATED)
 def estudiantes_ingresar_al_sistema(estudiantes_auth: EstudianteAuth):
     try:
+        print("creara")
         return ingresar_estudiantee(estudiantes_auth)
+        print("creo")
     except Exception as exception_error:
         logging.error(f"Error al crear información del estudiante ")
         return {

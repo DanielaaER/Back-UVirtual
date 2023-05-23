@@ -13,7 +13,6 @@ db_name = os.getenv('DEV_DB_NAME')
 
 
 engine = create_engine(f'mysql+pymysql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}')
-#engine = create_engine(f'mysql+pymysql://jazael:password@localhost:3306/prueba')
 
 
 
