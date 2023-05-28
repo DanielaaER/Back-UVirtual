@@ -56,7 +56,7 @@ def create_docente(data_docente: Docente):
 @docenteRouter.post("/docente", status_code=HTTP_201_CREATED)
 def docentes_ingresar_al_sistema(estudiantes_auth: EstudianteAuth):
     try:
-
+        print("ingreso docente")
         return ingresar_docentee(estudiantes_auth)
     except Exception as exception_error:
         logging.error(

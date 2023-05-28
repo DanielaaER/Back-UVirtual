@@ -9,6 +9,7 @@ from routes.horarioDocente import horarioDocenteRouter
 from routes.horarioAula import horarioAulaRouter
 
 from routes.bitacora import bitacoraRouter
+from routes.archivo import archivosRouter
 
 from dotenv import load_dotenv
 import uvicorn
@@ -47,6 +48,8 @@ app.include_router(aulaRouter, tags=["Aula"])
 
 app.include_router(bitacoraRouter, tags=["Bitacoras"])
 app.include_router(horarioAulaRouter, tags=["Aula"])
+
+app.include_router(archivosRouter, tags=["Archivos"])
 
 if __name__ == "__main__":
     # uvicorn.run(app, port=8080, host="0.0.0.0")
