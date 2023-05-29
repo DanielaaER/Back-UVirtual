@@ -9,7 +9,7 @@ from routes.horarioDocente import horarioDocenteRouter
 from routes.horarioAula import horarioAulaRouter
 
 from routes.bitacora import bitacoraRouter
-from routes.archivo import archivosRouter
+from routes.archivos import archivosRouter
 
 from dotenv import load_dotenv
 import uvicorn
