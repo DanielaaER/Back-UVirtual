@@ -21,15 +21,28 @@ from data.estudiante import ingresar_estudiantee
 from data.docente import  login_docentee
 
 
-def login(id_user, password):
+def login(user_Data):
     with engine.connect() as conn:
-        
-        if id_user[0].lower() in ['z', 's']:
+        result = None  # Inicializar result como None
+        print(user_Data)
+        if user_Data.matricula is not None:
             tipo = "Student"
+            print(tipo)
+            result = ingresar_estudiantee(user_Data)
         else:
             tipo = "Docente"
-       
-        print(tipo)
+            print(tipo)
+            print("hello")
+            print("buscara")
+            result = login_docentee(user_Data)
+            print("encontro")
+            print(result)
+            
+        if result is None:
+            print("..............................")
+            return Response(status_code=HTTP_204_NO_CONTENT)
+        
         return {
-            "user" : tipo
+            "user": tipo,
+            "data": result
         }
