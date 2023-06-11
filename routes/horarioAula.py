@@ -44,7 +44,7 @@ def get_HorarioAula_by_id(id_aula: int):
         return Response(status_code=500)
 
 
-@horarioAulaRouter.get("/horarioAulas/hora/{id_aula}", response_model=List[Clase])
+@horarioAulaRouter.get("/horarioAulas/hora/{id_aula}")
 def get_HorarioAula_hour(id_aula: int):
     try:
         return get_aula_hour_HorarioAulaa(id_aula)

@@ -79,7 +79,6 @@ def get_aula_hour_HorarioAulaa(id_aula):
         #dia_semana_nombre = "lunes" # dia de prueba
         print("obtuvo las clases")
         if result:
-            clases_list = []
             for row in result:
                 clase_dict = {
                 "id": row[0],
@@ -107,22 +106,21 @@ def get_aula_hour_HorarioAulaa(id_aula):
                     hora_inicio = hora_inicio.strftime('%H:%M')
                     hora_fin = datetime.strptime(hora_fin_str, "%H:%M")
                     hora_fin = hora_fin.strftime('%H:%M')
-                    ahora_time = ahora.strftime('%H:%M')
-                    print(ahora_time) # hora real
+                    ahora_time = ahora.strftime('%H:%M')  # hora real
                     #ahora_time = "11:00"  # hora de prueba
+                    
+                    print(ahora_time) 
                     ahora_time = datetime.strptime(ahora_time, '%H:%M')
                     ahora_time = ahora_time.strftime('%H:%M')
                     # Verificar si la hora actual está dentro del rango de tiempo
                     if hora_inicio <= ahora_time <= hora_fin:
                                     
                         clase = Clase(**clase_dict)
-                        clases_list.append(clase)
-
-                        
-            if (len(clases_list) == 0):
+            print(clase.id)
+            if (clase.id is None):
                 return Response(status_code=HTTP_204_NO_CONTENT)
             else:
                 logging.info(f"Se obtuvo información de todas las clases")
-                return clases_list
+                return clase.id
         else:
             return Response(status_code=HTTP_204_NO_CONTENT)
