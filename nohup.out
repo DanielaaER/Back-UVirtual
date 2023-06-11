@@ -1,0 +1,191 @@
+2023-06-11 18:15:14.220505: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-06-11 18:15:14.391149: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-11 18:15:14.391191: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-06-11 18:15:15.270541: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-11 18:15:15.270628: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-11 18:15:15.270641: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+INFO:     Started server process [68668]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:3003 (Press CTRL+C to quit)
+INFO:     187.146.124.155:50298 - "GET /archivo/profile_picture/0666559d-955c-4e5f-831b-721b81bdea8b.png HTTP/1.1" 200 OK
+INFO:     187.146.124.155:50308 - "GET /estudiante/estudiante/3 HTTP/1.1" 200 OK
+INFO:     187.146.124.155:50312 - "GET /estudiante/estudiante/3 HTTP/1.1" 200 OK
+creara
+(3, 'zs21004479', 'pbkdf2:sha256:30$Vd5J6VOhAtvlk3OxL9qA1p8VdA4dNM$0a182a9b7b4a011c1cf2f115d5ecb2246dc3bc33898c0ea0eef774cb99669b95', 'SOLANO VICTORIA JESUS GERARDO', 'zs21004479@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '271 2240554', 'uploads/profile_picture/0666559d-955c-4e5f-831b-721b81bdea8b.png')
+INFO:     187.146.124.155:36574 - "POST /estudiante HTTP/1.1" 201 Created
+INFO:     187.146.124.155:36580 - "GET /horarioEstudiante/horarioEstudiante/3 HTTP/1.1" 204 No Content
+INFO:     187.146.124.155:36590 - "GET /estudiante/estudiante/3 HTTP/1.1" 200 OK
+INFO:     187.146.124.155:36596 - "GET /estudiante/archivo/profile_picture/0666559d-955c-4e5f-831b-721b81bdea8b.png HTTP/1.1" 404 Not Found
+INFO:     187.146.124.155:36030 - "GET /estudiante/archivo/profile_picture/0666559d-955c-4e5f-831b-721b81bdea8b.png HTTP/1.1" 404 Not Found
+INFO:     187.146.124.155:56326 - "GET /estudiante/estudiante/3 HTTP/1.1" 200 OK
+INFO:     187.146.124.155:47342 - "GET /horarioEstudiante/horarioEstudiante/3 HTTP/1.1" 204 No Content
+INFO:     187.146.124.155:54994 - "GET /estudiante/estudiante/3 HTTP/1.1" 200 OK
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa474090b70>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/aadf3849b051fb7d9c9678c7015706e5
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa4740a4e80>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/aadf3849b051fb7d9c9678c7015706e5
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa4740a4f60>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/aadf3849b051fb7d9c9678c7015706e5
+ERROR:root:Error al crear información del estudiante 
+creara
+None
+INFO:     187.146.124.155:34740 - "POST /estudiante HTTP/1.1" 201 Created
+ingreso docente
+INFO:     187.146.124.155:34746 - "POST /docente HTTP/1.1" 204 No Content
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa46f6de9b0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/c9e1c9009919b1aa3812f9c0337935f4
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa46f72ad30>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/c9e1c9009919b1aa3812f9c0337935f4
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa46f72aac8>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/c9e1c9009919b1aa3812f9c0337935f4
+ERROR:root:Error al crear información del estudiante 
+creara
+None
+INFO:     187.146.124.155:59644 - "POST /estudiante HTTP/1.1" 201 Created
+INFO:     187.146.124.155:33856 - "POST /docentes HTTP/1.1" 422 Unprocessable Entity
+INFO:     187.146.44.176:52015 - "GET /docs HTTP/1.1" 200 OK
+INFO:     187.146.44.176:52015 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [68668]
+INFO:     Started server process [69009]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:3003 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [69009]
+INFO:     Started server process [69014]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:3003 (Press CTRL+C to quit)
+result
+password
+paso
+INFO:     187.146.14.63:58419 - "POST /docente/login HTTP/1.1" 201 Created
+result
+password
+paso
+INFO:     187.146.14.63:58430 - "POST /docente/login HTTP/1.1" 201 Created
+result
+password
+paso
+INFO:     187.146.14.63:58435 - "POST /docente/login HTTP/1.1" 201 Created
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [69014]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 617, in connect
+    (self.host, self.port), self.connect_timeout, **kwargs
+  File "/usr/local/lib/python3.7/socket.py", line 727, in create_connection
+    raise err
+  File "/usr/local/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3288, in raw_connection
+    return self.pool.connect()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 1268, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 169, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 166, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 678, in __init__
+    self.__connect()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 903, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 637, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 668, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "app.py", line 2, in <module>
+    from routes.login import loginRouter
+  File "/home/uvirtualDaniela/Back-UVirtual/routes/login.py", line 5, in <module>
+    from config.db import conn, engine
+  File "/home/uvirtualDaniela/Back-UVirtual/config/db.py", line 19, in <module>
+    conn = engine.connect()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3264, in connect
+    return self._connection_cls(self)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 148, in __init__
+    err, dialect, engine
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2426, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3288, in raw_connection
+    return self.pool.connect()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 1268, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 716, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 169, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 166, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 678, in __init__
+    self.__connect()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 903, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 637, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 352, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 668, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:     Started server process [1612]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:3003 (Press CTRL+C to quit)
+INFO:     187.146.44.176:52529 - "GET /docs HTTP/1.1" 200 OK
+INFO:     187.146.44.176:52529 - "GET /openapi.json HTTP/1.1" 200 OK
+inicio
+Student
+{'user': 'Student'}
+INFO:     187.146.44.176:52528 - "POST /login?id_user=zs21004514&password=EspDan0310 HTTP/1.1" 200 OK
+INFO:     187.146.44.176:53281 - "GET /docs HTTP/1.1" 200 OK
+INFO:     187.146.44.176:53281 - "GET /openapi.json HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     162.142.125.12:40784 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.142.125.12:56694 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.142.125.12:59550 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.

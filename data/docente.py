@@ -173,11 +173,12 @@ def login_docentee(docentes_auth):
             result = conn.execute(docentes.select().where(docentes.c.correo == docentes_auth.correo)).first()
         if (docentes_auth.id != None):
             result = conn.execute(docentes.select().where(docentes.c.id == docentes_auth.id)).first()
-        
         if result != None:
+            print("result")
             check_passw = check_password_hash(result[1], docentes_auth.contraseña)
+            print("password")
             if check_passw:
-                
+                print ("paso")
                 return {
                     "status": 200,
                     "message": "Access success",
