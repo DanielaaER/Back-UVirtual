@@ -130,12 +130,26 @@ def ingresar_clasees(estudiantes_auth):
                             print("creara")
                             new_edificio=Edificio
                             new_edificio.nombre = detalles["general"]["edificio"]
+                            print(new_edificio.nombre)
                             if (detalles["detalles"].get("escuela")) is not None:
                                 escuela = detalles["detalles"]["escuela"]
                             else:
                                 escuela = "Fac Estadistica E Informatica"
                             new_edificio.facultad=escuela
-                            new_edificio.campus=detalles["detalles"]["campus"]
+                            print("###########3")
+                            print(new_edificio.facultad)
+
+                            if (detalles["detalles"].get("campus")) is not None:
+                                print("hi")
+                                new_edificio.campus = str(
+                                    detalles["detalles"]["campus"])
+                                print("!")
+                            else:
+                                new_edificio.campus="IXTACZOQUITLAN"
+                                print("#")
+                            
+                            print(new_edificio.campus)
+
                             print(new_edificio)
                             conn.execute(edificios.insert().values(
                                 nombre=new_edificio.nombre,
@@ -177,11 +191,20 @@ def ingresar_clasees(estudiantes_auth):
                             new_clase.nrc = nrc
                             new_clase.nombre = clase
                             new_clase.academico = detalles["general"]["acad"]
-                            new_clase.facultad = detalles["general"]["escuela"]
+
+                            if (detalles["detalles"].get("escuela")) is not None:
+                                escuela = detalles["detalles"]["escuela"]
+                            else:
+                                escuela = "Fac Estadistica E Informatica"
+
+                            new_clase.facultad = escuela
                             
                             if (detalles["detalles"].get("campus")) is not None:
                                 new_clase.campus = str(
                                     detalles["detalles"]["campus"])
+                            else:
+                                new_clase.campus="IXTACZOQUITLAN"
+
                             new_clase.edificio = str(
                                 detalles["general"]["edificio"])
 
