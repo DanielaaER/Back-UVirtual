@@ -10,7 +10,7 @@ from routes.horarioAula import horarioAulaRouter
 
 from routes.bitacora import bitacoraRouter
 
-#from routes.archivos import archivosRouter
+from routes.archivos import archivosRouter
 from dotenv import load_dotenv
 import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
@@ -48,7 +48,7 @@ app.include_router(aulaRouter, tags=["Aula"])
 
 app.include_router(bitacoraRouter, tags=["Bitacoras"])
 app.include_router(horarioAulaRouter, tags=["Aula"])
-#app.include_router(archivosRouter, tags=["Archivos"])
+app.include_router(archivosRouter, tags=["Archivos"])
 
 
 if __name__ == "__main__":
