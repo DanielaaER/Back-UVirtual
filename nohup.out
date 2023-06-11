@@ -189,3 +189,250 @@ INFO:     162.142.125.12:40784 - "GET / HTTP/1.1" 404 Not Found
 INFO:     162.142.125.12:56694 - "GET / HTTP/1.1" 404 Not Found
 INFO:     162.142.125.12:59550 - "PRI %2A HTTP/2.0" 404 Not Found
 WARNING:  Invalid HTTP request received.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1612]
+INFO:     Started server process [1888]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:3003 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1888]
+INFO:     Started server process [1893]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:3003 (Press CTRL+C to quit)
+INFO:     187.146.44.176:53682 - "GET /docs HTTP/1.1" 200 OK
+INFO:     187.146.44.176:53682 - "GET /openapi.json HTTP/1.1" 200 OK
+inicio
+id=1 matricula=None correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWF0cmljdWxhIjpudWxsLCJjb3JyZW8iOm51bGwsImNvbnRyYXNlXHUwMGYxYSI6InBhc3N3b3JkIiwiZXhwIjoxNjg2NjAwOTIyfQ.Xxmk9wLzoAZJoRSGicLA0XTKZV0AfDY_zpDqE9lbRC0', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWF0cmljdWxhIjpudWxsLCJjb3JyZW8iOm51bGwsImNvbnRyYXNlXHUwMGYxYSI6InBhc3N3b3JkIiwiZXhwIjoxNjg2NjAwOTIyfQ.Xxmk9wLzoAZJoRSGicLA0XTKZV0AfDY_zpDqE9lbRC0', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.44.176:53681 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004514' correo=None contraseña='EspDan0310'
+Student
+(1, 'zs21004514', 'pbkdf2:sha256:30$JWjNJsxnXctCb4Ca5UfJ14foY6B5G3$1bbcb3e2dd0ced29142d9c5e3089847b9a55391ba6eba302c9da7137b352801d', 'ESPINOSA ROJAS DANIELA', 'zs21004514@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '271 2387763', 'uploads/profile_picture/7f24ce4a-1567-46d4-947b-696655cd0fad.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUxNCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiRXNwRGFuMDMxMCIsImV4cCI6MTY4NjYwMDk3MX0.ROV1lob8L9kJVoH7vnCI5LgW3erHU3MDyiHYB9-yrIU', 'user': Estudiante(id=1, matricula='zs21004514', contraseña='pbkdf2:sha256:30$JWjNJsxnXctCb4Ca5UfJ14foY6B5G3$1bbcb3e2dd0ced29142d9c5e3089847b9a55391ba6eba302c9da7137b352801d', nombre='ESPINOSA ROJAS DANIELA', correo='zs21004514@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='271 2387763', foto_perfil='uploads/profile_picture/7f24ce4a-1567-46d4-947b-696655cd0fad.png')}}
+INFO:     187.146.44.176:53691 - "POST /login HTTP/1.1" 200 OK
+(1, 'zs21004514', 'pbkdf2:sha256:30$JWjNJsxnXctCb4Ca5UfJ14foY6B5G3$1bbcb3e2dd0ced29142d9c5e3089847b9a55391ba6eba302c9da7137b352801d', 'ESPINOSA ROJAS DANIELA', 'zs21004514@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '271 2387763', 'uploads/profile_picture/7f24ce4a-1567-46d4-947b-696655cd0fad.png')
+
+================ STUDENT DATA ======================
+
+{"login": true, "nombre": "ESPINOSA ROJAS DANIELA", "clases": {"DISEÑO DE INTERFACES DE USUARI": {"general": {"clase": "DISEÑO DE INTERFACES DE USUARI", "acad": "GONZALEZ DIAZ JORGE ERNESTO", "correo": "jorgegonzalez04@uv:mx", "martes": "15:00-16:59", "jueves": "15:00-16:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "12"}, "detalles": {"clase": "DISEÑO DE INTERFACES DE USUARI", "nrc": "13335", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "6"}}, "INGLES III BASICO **": {"general": {"clase": "INGLES III BASICO **", "acad": "GARCIA MUÑOZ VIRGINIA", "correo": "virgarcia@uv:mx", "sabado": "09:00-13:59", "escuela": "Centro De Idiomas", "edificio": "B-CIC", "aula": "6"}, "detalles": {"clase": "INGLES III BASICO **", "nrc": "53269", "situacion": "ORDINARIO", "campus": "CORDOBA", "direccion": "Calle 4 No: 313, Entre Av: 3 y 5: C:P 94500 Col: centro CORDOBA", "modalidad": "Presencial", "nota": "*Este curso no forma parte de las EE de Elección Libre de tu programa, NO se incluye en tu escolaridad*:"}}, "PRINCIPIOS DE DISEÑO DE SOFTWARE": {"general": {"clase": "PRINCIPIOS DE DISEÑO DE SOFTWARE", "acad": "MANCILLA GOMEZ MARTIN", "correo": "mmancilla@uv:mx", "lunes": "07:00-08:59", "miercoles": "07:00-08:59", "viernes": "07:00-08:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PRINCIPIOS DE DISEÑO DE SOFTWARE", "acad": "MANCILLA GOMEZ MARTIN", "correo": "mmancilla@uv:mx", "lunes": "07:00-08:59", "miercoles": "07:00-08:59", "viernes": "07:00-08:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}}, "PARADIGMAS DE PROGRAMACION": {"general": {"clase": "PARADIGMAS DE PROGRAMACION", "acad": "JIMENEZ NIETO YARA ANAHI", "correo": "yjimenez@uv:mx", "martes": "09:00-10:59", "miercoles": "09:00-10:59", "jueves": "09:00-10:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PARADIGMAS DE PROGRAMACION", "acad": "JIMENEZ NIETO YARA ANAHI", "correo": "yjimenez@uv:mx", "martes": "09:00-10:59", "miercoles": "09:00-10:59", "jueves": "09:00-10:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}}, "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE": {"general": {"clase": "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE", "acad": "GONZALEZ DIAZ JORGE ERNESTO", "correo": "jorgegonzalez04@uv:mx", "martes": "07:00-08:59", "jueves": "07:00-08:59", "viernes": "11:00-12:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE", "nrc": "86875", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "10"}}, "REDES": {"general": {"clase": "REDES", "acad": "LOPEZ ALMEIDA JUAN FRANCISCO", "correo": "jflopez@uv:mx", "lunes": "09:00-10:59", "miercoles": "11:00-12:59", "viernes": "09:00-10:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "REDES", "nrc": "86877", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "9"}}, "PROCESOS PARA LA INGENIERIA DE SOFTWARE": {"general": {"clase": "PROCESOS PARA LA INGENIERIA DE SOFTWARE", "acad": "RODRIGUEZ PARADA ADOLFO", "correo": "adrodriguez@uv:mx", "lunes": "11:00-12:59", "martes": "11:00-12:59", "jueves": "11:00-12:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PROCESOS PARA LA INGENIERIA DE SOFTWARE", "nrc": "86880", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "10"}}}}
+
+====================================================
+
+edifciio
+__EDIFICIO
+(1, 'J-EDI1', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+1
+_______________
+(1, '12', 1)
+________________
+clases
+guardar horario :)
+guardar aula :)
+1
+1
+edifciio
+__EDIFICIO
+(2, 'B-CIC', 'Fac Estadistica E Informatica', 'CORDOBA')
+2
+_______________
+(2, '6', 2)
+________________
+clases
+guardar horario :)
+guardar aula :)
+2
+2
+edifciio
+__EDIFICIO
+(1, 'J-EDI1', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+1
+_______________
+(3, '2', 1)
+________________
+clases
+guardar horario :)
+guardar aula :)
+3
+3
+edifciio
+__EDIFICIO
+(1, 'J-EDI1', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+1
+_______________
+(3, '2', 1)
+________________
+clases
+guardar horario :)
+guardar aula :)
+3
+4
+edifciio
+__EDIFICIO
+(1, 'J-EDI1', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+1
+_______________
+(3, '2', 1)
+________________
+clases
+guardar horario :)
+guardar aula :)
+3
+5
+edifciio
+__EDIFICIO
+(1, 'J-EDI1', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+1
+_______________
+(3, '2', 1)
+________________
+clases
+guardar horario :)
+guardar aula :)
+3
+6
+edifciio
+__EDIFICIO
+(1, 'J-EDI1', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+1
+_______________
+(3, '2', 1)
+________________
+clases
+guardar horario :)
+guardar aula :)
+3
+7
+INFO:     187.146.44.176:53697 - "POST /clase HTTP/1.1" 201 Created
+INFO:     187.146.44.176:53699 - "GET /clases HTTP/1.1" 200 OK
+INFO:     187.146.44.176:53700 - "GET /docentes HTTP/1.1" 200 OK
+ingreso docente
+
+================ STUDENT DATA ======================
+
+{"login": true, "nombre": "ESPINOSA ROJAS DANIELA", "clases": {"DISEÑO DE INTERFACES DE USUARI": {"general": {"clase": "DISEÑO DE INTERFACES DE USUARI", "acad": "GONZALEZ DIAZ JORGE ERNESTO", "correo": "jorgegonzalez04@uv:mx", "martes": "15:00-16:59", "jueves": "15:00-16:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "12"}, "detalles": {"clase": "DISEÑO DE INTERFACES DE USUARI", "nrc": "13335", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "6"}}, "INGLES III BASICO **": {"general": {"clase": "INGLES III BASICO **", "acad": "GARCIA MUÑOZ VIRGINIA", "correo": "virgarcia@uv:mx", "sabado": "09:00-13:59", "escuela": "Centro De Idiomas", "edificio": "B-CIC", "aula": "6"}, "detalles": {"clase": "INGLES III BASICO **", "nrc": "53269", "situacion": "ORDINARIO", "campus": "CORDOBA", "direccion": "Calle 4 No: 313, Entre Av: 3 y 5: C:P 94500 Col: centro CORDOBA", "modalidad": "Presencial", "nota": "*Este curso no forma parte de las EE de Elección Libre de tu programa, NO se incluye en tu escolaridad*:"}}, "PRINCIPIOS DE DISEÑO DE SOFTWARE": {"general": {"clase": "PRINCIPIOS DE DISEÑO DE SOFTWARE", "acad": "MANCILLA GOMEZ MARTIN", "correo": "mmancilla@uv:mx", "lunes": "07:00-08:59", "miercoles": "07:00-08:59", "viernes": "07:00-08:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PRINCIPIOS DE DISEÑO DE SOFTWARE", "acad": "MANCILLA GOMEZ MARTIN", "correo": "mmancilla@uv:mx", "lunes": "07:00-08:59", "miercoles": "07:00-08:59", "viernes": "07:00-08:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}}, "PARADIGMAS DE PROGRAMACION": {"general": {"clase": "PARADIGMAS DE PROGRAMACION", "acad": "JIMENEZ NIETO YARA ANAHI", "correo": "yjimenez@uv:mx", "martes": "09:00-10:59", "miercoles": "09:00-10:59", "jueves": "09:00-10:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PARADIGMAS DE PROGRAMACION", "acad": "JIMENEZ NIETO YARA ANAHI", "correo": "yjimenez@uv:mx", "martes": "09:00-10:59", "miercoles": "09:00-10:59", "jueves": "09:00-10:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}}, "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE": {"general": {"clase": "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE", "acad": "GONZALEZ DIAZ JORGE ERNESTO", "correo": "jorgegonzalez04@uv:mx", "martes": "07:00-08:59", "jueves": "07:00-08:59", "viernes": "11:00-12:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE", "nrc": "86875", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "10"}}, "REDES": {"general": {"clase": "REDES", "acad": "LOPEZ ALMEIDA JUAN FRANCISCO", "correo": "jflopez@uv:mx", "lunes": "09:00-10:59", "miercoles": "11:00-12:59", "viernes": "09:00-10:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "REDES", "nrc": "86877", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "9"}}, "PROCESOS PARA LA INGENIERIA DE SOFTWARE": {"general": {"clase": "PROCESOS PARA LA INGENIERIA DE SOFTWARE", "acad": "RODRIGUEZ PARADA ADOLFO", "correo": "adrodriguez@uv:mx", "lunes": "11:00-12:59", "martes": "11:00-12:59", "jueves": "11:00-12:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PROCESOS PARA LA INGENIERIA DE SOFTWARE", "nrc": "86880", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "10"}}}}
+
+====================================================
+
+GONZALEZ DIAZ JORGE ERNESTO
+1
+(1, 1, 1)
+GARCIA MUÑOZ VIRGINIA
+2
+(2, 2, 2)
+MANCILLA GOMEZ MARTIN
+3
+(3, 3, 3)
+JIMENEZ NIETO YARA ANAHI
+4
+(4, 4, 4)
+GONZALEZ DIAZ JORGE ERNESTO
+5
+(5, 1, 5)
+LOPEZ ALMEIDA JUAN FRANCISCO
+6
+(6, 5, 6)
+RODRIGUEZ PARADA ADOLFO
+7
+(7, 6, 7)
+INFO:     187.146.44.176:53701 - "POST /docente HTTP/1.1" 201 Created
+INFO:     187.146.44.176:53702 - "GET /docentes HTTP/1.1" 200 OK
+inicio
+id=1 matricula=None correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWF0cmljdWxhIjpudWxsLCJjb3JyZW8iOm51bGwsImNvbnRyYXNlXHUwMGYxYSI6InBhc3N3b3JkIiwiZXhwIjoxNjg2NjAxMTYyfQ.PSfpZfroaVwhhF_Zts5H4Fq-0fiH1vyaaAUXvpjBQ2M', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWF0cmljdWxhIjpudWxsLCJjb3JyZW8iOm51bGwsImNvbnRyYXNlXHUwMGYxYSI6InBhc3N3b3JkIiwiZXhwIjoxNjg2NjAxMTYyfQ.PSfpZfroaVwhhF_Zts5H4Fq-0fiH1vyaaAUXvpjBQ2M', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.44.176:53707 - "POST /login HTTP/1.1" 200 OK
+creara
+(1, 'zs21004514', 'pbkdf2:sha256:30$JWjNJsxnXctCb4Ca5UfJ14foY6B5G3$1bbcb3e2dd0ced29142d9c5e3089847b9a55391ba6eba302c9da7137b352801d', 'ESPINOSA ROJAS DANIELA', 'zs21004514@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '271 2387763', 'uploads/profile_picture/7f24ce4a-1567-46d4-947b-696655cd0fad.png')
+INFO:     187.146.44.176:53788 - "POST /estudiante HTTP/1.1" 201 Created
+INFO:     35.203.211.201:57958 - "GET / HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:62517 - "GET /docs HTTP/1.1" 200 OK
+INFO:     187.146.14.63:62517 - "GET /openapi.json HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+None
+-- Image saved --
+
+================ STUDENT DATA ======================
+
+{"login": true, "nombre": "GALINDO ALDUCIN OMAR JAZAEL", "personal_information": {"correo_institucional": "zs21004520@estudiantes.uv.mx", "correo_alterno": "omar_aldu32@outlook.com", "referencia_bancaria": "", "fecha_nacimiento": "septiembre 01, 2003", "nacionalidad": "Mexicano", "estado_civil": "Soltero", "género": "Masculino", "curp": "GAAO030901HVZLLMA9", "número_de_seguridad_social_(nss)": "08200309469", "clínica": "", "dirección": ""}, "residence_information": {"calle": "17 Oriente No.120", "colonia": "Constitucion", "cp": "94106", "ciudad": "Huatusco De Chicuell", "municipio": "Huatusco", "estado": "Veracruz", "país": "Mexico", "teléfono": "273 1000238"}, "parents_information": {"nombre": "", "parentesco": "", "grado_estudios": "", "teléfono": "", "domicilio": ""}, "academic_information": {"programa": "Ingenieria De Software", "área": "Academica Economico-Administra", "facultad": "Facultad De Negocios Y Tecnologías", "campus": "Ixtaczoquitlán", "nivel": "Licenciatura", "tutor_académico": "Jimenez Nieto Yara Anahi", "modalidad": "Escolarizado", "modelo": "Creditos", "año_de_ingreso": "2021", "tipo_de_admisión": "Admision Inicial", "totales_por_programa": "356", "mínimos_por_periodo": "0", "máximos_por_periodo": "0", "periodos_cursados": "4", "periodos_estándar": "8"}, "student_photo_profile": "uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png"}
+
+====================================================
+
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwMjc4MX0.M1RdQxq0htNESUw0bGD4BRp3NIWUf_1xFFU1jq0KYL4', 'user': <sqlalchemy.engine.cursor.CursorResult object at 0x7fbeffd66e80>}}
+INFO:     187.146.14.63:62518 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwMjc4N30.vBfNd72z62B2i6jnIYdz2-wp4ux2EnqiOj1qVxUfqkc', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:62539 - "POST /login HTTP/1.1" 200 OK
+INFO:     187.146.14.63:62561 - "GET /estudiantes HTTP/1.1" 200 OK
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbeffc10c18>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/575b27d57e6f065096a854c36cbe6ad0
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbeffc1a2b0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/575b27d57e6f065096a854c36cbe6ad0
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbeffc1a0f0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/575b27d57e6f065096a854c36cbe6ad0
+ERROR:root:Error al obtener información  ||| the JSON object must be str, bytes or bytearray, not dict
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Student
+None
+INFO:     187.146.14.63:62751 - "POST /login HTTP/1.1" 500 Internal Server Error
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbeffc1af98>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/802aefa2fae470d9d7fb102f82f93b41
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbeffbb4278>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/802aefa2fae470d9d7fb102f82f93b41
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbeffbb40f0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/802aefa2fae470d9d7fb102f82f93b41
+ERROR:root:Error al obtener información  ||| the JSON object must be str, bytes or bytearray, not dict
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Student
+None
+INFO:     187.146.14.63:62779 - "POST /login HTTP/1.1" 500 Internal Server Error
+inicio
+id=1 matricula=None correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWF0cmljdWxhIjpudWxsLCJjb3JyZW8iOm51bGwsImNvbnRyYXNlXHUwMGYxYSI6InBhc3N3b3JkIiwiZXhwIjoxNjg2NjAzMjA0fQ.GPWE6cON1RooM6HG4KreIVJ2uk1AOrCIeHwhvekUqmI', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWF0cmljdWxhIjpudWxsLCJjb3JyZW8iOm51bGwsImNvbnRyYXNlXHUwMGYxYSI6InBhc3N3b3JkIiwiZXhwIjoxNjg2NjAzMjA0fQ.GPWE6cON1RooM6HG4KreIVJ2uk1AOrCIeHwhvekUqmI', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:62950 - "POST /login HTTP/1.1" 200 OK
+creara
+(1, 'zs21004514', 'pbkdf2:sha256:30$JWjNJsxnXctCb4Ca5UfJ14foY6B5G3$1bbcb3e2dd0ced29142d9c5e3089847b9a55391ba6eba302c9da7137b352801d', 'ESPINOSA ROJAS DANIELA', 'zs21004514@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '271 2387763', 'uploads/profile_picture/7f24ce4a-1567-46d4-947b-696655cd0fad.png')
+INFO:     187.146.44.176:54492 - "POST /estudiante HTTP/1.1" 201 Created
+ERROR:root:Error al crear información del estudiante 
+creara
+INFO:     187.146.44.176:54639 - "POST /estudiante HTTP/1.1" 201 Created
+INFO:     187.146.14.63:63338 - "GET /docs HTTP/1.1" 200 OK
+INFO:     187.146.14.63:63338 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     187.146.14.63:63338 - "GET /docs HTTP/1.1" 200 OK
+INFO:     187.146.14.63:63338 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     187.146.14.63:63440 - "GET /docs HTTP/1.1" 200 OK
+INFO:     187.146.14.63:63440 - "GET /openapi.json HTTP/1.1" 200 OK
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbeffbc9208>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/c12c0aea7b6d8c7741d51c9f84d84504
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbeffbc9278>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/c12c0aea7b6d8c7741d51c9f84d84504
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbeffbc9630>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/c12c0aea7b6d8c7741d51c9f84d84504
+ERROR:root:Error al obtener información  ||| the JSON object must be str, bytes or bytearray, not dict
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Student
+None
+INFO:     187.146.14.63:63441 - "POST /login HTTP/1.1" 500 Internal Server Error
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1893]

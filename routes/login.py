@@ -13,18 +13,20 @@ from typing import List
 from functions_jwt import write_token, validate_token
 from werkzeug.security import generate_password_hash, check_password_hash
 import json
-from typing import Union
+from typing import Union, Optional
 
+
+from schemas.user import userAuth
 from data.login import login
 loginRouter = APIRouter()
 
 
 
 @loginRouter.post("/login")
-def login_user(id_user, password):
-    try:   
-        print ("inicio")
-        result = login(id_user, password)
+def login_user(user_Data: userAuth):
+    try:
+        print("inicio")
+        result = login(user_Data)
         print(result)
         return result
     except Exception as exception_error:
