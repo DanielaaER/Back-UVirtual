@@ -1,4 +1,6 @@
 from fastapi import FastAPI
+from routes.login import loginRouter
+
 from routes.estudiante import estudianteRouter
 from routes.edificio import edificioRouter
 from routes.aula import aulaRouter
@@ -10,7 +12,11 @@ from routes.horarioAula import horarioAulaRouter
 
 from routes.bitacora import bitacoraRouter
 
+
+
 from routes.archivos import archivosRouter
+
+
 from dotenv import load_dotenv
 import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
@@ -35,6 +41,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.include_router(loginRouter, tags=["Login"])
 app.include_router(estudianteRouter, tags=["Estudiantes"])
 app.include_router(claseRouter, tags=["Clases"])
 app.include_router(docenteRouter, tags=["Docentes"])
@@ -48,7 +55,9 @@ app.include_router(aulaRouter, tags=["Aula"])
 
 app.include_router(bitacoraRouter, tags=["Bitacoras"])
 app.include_router(horarioAulaRouter, tags=["Aula"])
-app.include_router(archivosRouter, tags=["Archivos"])
+
+
+#app.include_router(archivosRouter, tags=["Archivos"])
 
 
 if __name__ == "__main__":

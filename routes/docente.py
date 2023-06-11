@@ -77,7 +77,7 @@ def update_docente(data_update: DocenteUpdate, id_docente: int):
 
 
 @docenteRouter.post("/docente/login", status_code=HTTP_201_CREATED)
-def docentes_ingresar_al_sistema(docentes_auth: DocenteAuth):
+def login_docente(docentes_auth: DocenteAuth):
     try:
 
         return login_docentee(docentes_auth)
