@@ -25,15 +25,19 @@ def login(user_Data):
     with engine.connect() as conn:
         result = None  # Inicializar result como None
         print(user_Data)
-        if user_Data.matricula is not None:
+        if user_Data.matricula[0].lower() in ['z', 's']:
             tipo = "Student"
             print(tipo)
+            print(user_Data)
             result = ingresar_estudiantee(user_Data)
         else:
             tipo = "Docente"
             print(tipo)
             print("hello")
             print("buscara")
+            
+            user_Data.id=user_Data.matricula
+            user_Data.matricula = None
             result = login_docentee(user_Data)
             print("encontro")
             print(result)
