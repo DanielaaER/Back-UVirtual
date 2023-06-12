@@ -29,12 +29,11 @@ def login(user_Data):
         if validar_user(user_Data):
             result = None  # Inicializar result como None
             print(user_Data)
-            if user_Data.matricula is not None:
-                if user_Data.matricula[0].lower() in ['z', 's'] :
-                    tipo = "Student"
-                    print(tipo)
-                    print(user_Data)
-                    result = ingresar_estudiantee(user_Data)
+            if user_Data.matricula[0].lower() in ['z', 's'] :
+                tipo = "Student"
+                print(tipo)
+                print(user_Data)
+                result = ingresar_estudiantee(user_Data)
             else:
                 tipo = "Docente"
                 print(tipo)
