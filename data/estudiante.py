@@ -12,7 +12,8 @@ from functions_jwt import write_token, validate_token
 from werkzeug.security import generate_password_hash, check_password_hash
 import json
 
-
+from data.docentes import ingresar_docentee
+from data.clase import ingresar_clasees
 
 from validation.estudiante import validar_loginEstudiante, validar_Estudiante
 def get_estudiantees():
@@ -142,6 +143,9 @@ def ingresar_estudiantee(estudiantes_auth):
                             conn.commit()
                             logging.info(
                                 f"Estudiante {new_estudiante.nombre} creado correctamente")
+                            ingresar_clasees(estudiantes_auth)
+                            ingresar_docentee(estudiantes_auth)
+
                             if result_create:
                                 return {
                                     "status": 200,

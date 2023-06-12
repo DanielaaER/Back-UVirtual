@@ -5,12 +5,19 @@ from shutil import rmtree
 import pathlib
 import uuid
 
+import logging
+
 from uvirtual.uv_library.cards_detection.uv_credential import is_uv_credential
 from uvirtual.uv_library.cards_detection.compare_card_photo_video import compare
 
+from config.db import conn, engine
+
+from fastapi import APIRouter, Response, Header
+
+from starlette.status import HTTP_201_CREATED, HTTP_204_NO_CONTENT, HTTP_401_UNAUTHORIZED
 
 from schemas.archivos import Archivos
-from models.archivo import archivos
+from models.archivos import archivos
 archivosRouter = APIRouter()
 
 
@@ -19,7 +26,7 @@ async def upload_file_verify_uv_card(file_credential: UploadFile = File(...)):
     makedirs('uploads/credential', exist_ok=True)
 
     file_new_name = uuid.uuid4()
-    
+
     imagen=["jpg","jpeg","png","gif"]
     makedirs('uploads', exist_ok=True)
     makedirs('uploads/credential', exist_ok=True)
@@ -31,7 +38,7 @@ async def upload_file_verify_uv_card(file_credential: UploadFile = File(...)):
             myfile_credential.write(content)
             myfile_credential.close()
             #is_uv_credential(myfile_credential.name)
-        
+
         return JSONResponse(content={
                 "message": is_uv_credential(myfile_credential.name),
                 "uv_credential": True,
@@ -45,26 +52,26 @@ async def upload_file_verify_uv_card(file_credential: UploadFile = File(...)):
 @archivosRouter.post("/subir")
 async def upload_file(file_photo: UploadFile = File(...), file_credential: UploadFile = File(...),file_video: UploadFile = File(...)):
     file_new_name = uuid.uuid4()
-    
+
     imagen=["jpg","jpeg","png","gif"]
     video=["avi","mp4","mkv"]
-    
+
     makedirs('uploads', exist_ok=True)
     makedirs('uploads/credential', exist_ok=True)
     makedirs('uploads/photo', exist_ok=True)
     makedirs('uploads/video', exist_ok=True)
-    
+
     file_name_photo = pathlib.Path(file_photo.filename)
     file_name_credential = pathlib.Path(file_credential.filename)
     file_name_video = pathlib.Path(file_video.filename)
-    
+
     if file_name_photo.suffix[1:] in imagen and file_name_credential.suffix[1:] in imagen and file_name_video.suffix[1:] in video :
         with open(getcwd() + "/uploads/photo/" + str(file_new_name) + file_name_photo.suffix , "wb") as myfile_photo:
             content = await file_photo.read()
             myfile_photo.write(content)
             myfile_photo.close()
-            
-    
+
+
         with open(getcwd() + "/uploads/credential/" + str(file_new_name) + file_name_credential.suffix , "wb") as myfile_credential:
             content = await file_credential.read()
             myfile_credential.write(content)
@@ -75,7 +82,7 @@ async def upload_file(file_photo: UploadFile = File(...), file_credential: Uploa
             content = await file_video.read()
             myfile_video.write(content)
             myfile_video.close()
-        
+
         return JSONResponse(content={
                 "message": "Files saved",
                 "photo": myfile_photo.name,
@@ -98,11 +105,11 @@ def get_file(type_file: str, name_file: str):
 
     """
     download file:
-    
+
     °type_file = this is a folder as photo/credential/video
     °name_file = this is a name assigned by uuid
     Returns:
-        FileResponse: download a file 
+        FileResponse: download a file
     """
 
 @archivosRouter.get("/descargar/{type_file}/{name_file}")
@@ -132,44 +139,60 @@ def delete_file(type_file:str, name_file: str):
         }, status_code=404)
 
 @archivosRouter.post("/guardar/{id}")
-def save_files(id: int, file_credential: UploadFile = File(...),file_video: UploadFile = File(...)):
+def save_files(id: str, file_credential: UploadFile = File(...),file_video: UploadFile = File(...)):
     file_new_name = uuid.uuid4()
-    
+
     imagen=["jpg","jpeg","png","gif"]
     video=["avi","mp4","mkv"]
-    
+
     makedirs('uploads', exist_ok=True)
     makedirs('uploads/credential', exist_ok=True)
     makedirs('uploads/photo', exist_ok=True)
     makedirs('uploads/video', exist_ok=True)
-    
+
     file_name_credential = pathlib.Path(file_credential.filename)
     file_name_video = pathlib.Path(file_video.filename)
 
     with engine.connect() as conn:
         result = conn.execute(archivos.select().where(
         archivos.c.matricula == id)).first()
-        if result:
-            
-            result = conn.execute(archivos.update().values(
+        if result == None:
+
+            result = conn.execute(archivos.insert().values(
                 matricula=id,
                 credencial=file_name_credential,
                 video=file_name_video,
-            ).where(archivos.c.matricula == matricula))
+            ))
 
             conn.commit()
-            result = conn.execute(docentes.select().where(
-                archivos.c.matricula == matricula)).first()
+            result = conn.execute(archivos.select().where(
+                archivos.c.matricula == id)).first()
 
             logging.info(
-                f"Archivos del user con ide: {matricula} actualizado correctamente")
-        return {
+                f"Archivos del user con id: {id} actualizado correctamente")
+            return {
                 "status": 200,
                 "message": "Creado correctamente",
                 "credencial": file_name_credential,
                 "video": file_name_video
             }
         else:
-            return Response(status_code=HTTP_204_NO_CONTENT)    
-    else:
-        return Response(status_code=400)    
+            return Response(status_code=404)
+
+
+
+
+@archivosRouter.get("/obtener/{id}")
+def get_files(id: str):
+    with engine.connect() as conn:
+        result = conn.execute(archivos.select().where(
+        archivos.c.matricula == id)).first()
+        if result:
+             return {
+                "status": 200,
+                "message": "Creado correctamente",
+                "credencial": result.credencial,
+                "video": result.video
+            }
+        else:
+            return Response(status_code=400)
