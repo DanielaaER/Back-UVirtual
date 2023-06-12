@@ -65,21 +65,20 @@ def docentes_ingresar_al_sistema(estudiantes_auth: EstudianteAuth):
 
 
 @docenteRouter.put("/docente/{id_docente}", response_model=DocenteUpdate)
-def update_docente(data_update: DocenteUpdate, id_docente: int):
+def update_docente(data_update: DocenteUpdate):
     try:
 
-        return actualizar_docentee(data_update, id_docente)
+        return actualizar_docentee(data_update)
 
     except Exception as exception_error:
         logging.error(
-            f"Error al actualizar el docente con el ID: {id_docente} ||| {exception_error}")
+            f"Error al actualizar el docente con el ID: {data_update.id} ||| {exception_error}")
         return Response(status_code=500)
 
 
 @docenteRouter.post("/docente/login", status_code=HTTP_201_CREATED)
 def login_docente(docentes_auth: DocenteAuth):
     try:
-
         return login_docentee(docentes_auth)
     except Exception as exception_error:
         logging.error(
