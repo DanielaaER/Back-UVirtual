@@ -192,28 +192,34 @@ def login_docentee(docentes_auth):
 
 
 
-def actualizar_docentee(data_update, id_docente):
+def actualizar_docentee(data_update):
     with engine.connect() as conn:
         result = conn.execute(docentes.select().where(
-            docentes.c.id == id_docente)).first()
+            docentes.c.id == data_update.id)).first()
         if result:
-            encryp_passw = generate_password_hash(data_update.contraseña, "pbkdf2:sha256:30", 30)
+            check_passw = check_password_hash(result[1], data_update.contraseña)
+            print(check_passw)
+            print ("checo contraseña :)")
+            if check_passw:
+                encryp_passw = generate_password_hash(data_update.new_password, "pbkdf2:sha256:30", 30)
+                
+                result = conn.execute(docentes.update().values(
+                    contraseña=encryp_passw,
+                    telefono=data_update.telefono,
+                    correo=data_update.correo,
+                    campus=data_update.campus,
+                    foto_perfil=data_update.foto_perfil
+                ).where(docentes.c.id == data_update.id))
 
-            result = conn.execute(docentes.update().values(
-                contraseña=encryp_passw,
-                telefono=data_update.telefono,
-                correo=data_update.correo,
-                campus=data_update.campus,
-                foto_perfil=data_update.foto_perfil
-            ).where(docentes.c.id == id_docente))
+                conn.commit()
+                result = conn.execute(docentes.select().where(
+                    docentes.c.id == data_update.id)).first()
 
-            conn.commit()
-            result = conn.execute(docentes.select().where(
-                docentes.c.id == id_docente)).first()
+                logging.info(
+                    f"Docente con el ID: {data_update.id} actualizado correctamente")
 
-            logging.info(
-                f"Docente con el ID: {id_docente} actualizado correctamente")
-
-            return Response(status_code=HTTP_201_CREATED)
+                return Response(status_code=HTTP_201_CREATED)
+            else:
+                return Response(status_code=404)
         else:
             return Response(status_code=HTTP_204_NO_CONTENT)    

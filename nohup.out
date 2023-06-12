@@ -444,3 +444,951 @@ ERROR:root:Error al crear información del estudiante
 creara
 None
 INFO:     187.146.44.176:54763 - "POST /estudiante HTTP/1.1" 201 Created
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2667]
+INFO:     Started server process [2807]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:3003 (Press CTRL+C to quit)
+ERROR:root:Error al crear información del estudiante 
+creara
+None
+INFO:     187.146.44.176:54768 - "POST /estudiante HTTP/1.1" 201 Created
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f89fa824ac8>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/0bd142971f77fa5aa474e9e4cad4a80e
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f89fa8521d0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/0bd142971f77fa5aa474e9e4cad4a80e
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f89fa8522e8>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/0bd142971f77fa5aa474e9e4cad4a80e
+ERROR:root:Error al crear información del estudiante 
+creara
+None
+INFO:     187.146.44.176:54783 - "POST /estudiante HTTP/1.1" 201 Created
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDQyNjZ9.TVGovymiGpurZUugxmG2dpagwE-0N2wEQngcaYmCxTk', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDQyNjZ9.TVGovymiGpurZUugxmG2dpagwE-0N2wEQngcaYmCxTk', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.44.176:54783 - "POST /login HTTP/1.1" 200 OK
+INFO:     187.146.14.63:63586 - "GET /docs HTTP/1.1" 200 OK
+INFO:     187.146.14.63:63586 - "GET /openapi.json HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004514' correo=None contraseña='EspDan0310'
+Student
+id=None matricula='zs21004514' correo=None contraseña='EspDan0310'
+(1, 'zs21004514', 'pbkdf2:sha256:30$JWjNJsxnXctCb4Ca5UfJ14foY6B5G3$1bbcb3e2dd0ced29142d9c5e3089847b9a55391ba6eba302c9da7137b352801d', 'ESPINOSA ROJAS DANIELA', 'zs21004514@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '271 2387763', 'uploads/profile_picture/7f24ce4a-1567-46d4-947b-696655cd0fad.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUxNCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiRXNwRGFuMDMxMCIsImV4cCI6MTY4NjYwNDMwMH0.bGUIwBuFGSnhpezGvusrQQ9Lp7S07LXsW_BZqgiETa4', 'user': Estudiante(id=1, matricula='zs21004514', contraseña='pbkdf2:sha256:30$JWjNJsxnXctCb4Ca5UfJ14foY6B5G3$1bbcb3e2dd0ced29142d9c5e3089847b9a55391ba6eba302c9da7137b352801d', nombre='ESPINOSA ROJAS DANIELA', correo='zs21004514@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='271 2387763', foto_perfil='uploads/profile_picture/7f24ce4a-1567-46d4-947b-696655cd0fad.png')}}
+INFO:     187.146.44.176:54793 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDQzMDV9.s9KKrpPD_5z81M6j9lLNUGu77wfHWdbXr_u0q9rwYNk', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDQzMDV9.s9KKrpPD_5z81M6j9lLNUGu77wfHWdbXr_u0q9rwYNk', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:63587 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDU5MTZ9.JHXD_ztFp7gHHCD-yDsWwwi3dJioLy0Tw6kDabDetJE', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDU5MTZ9.JHXD_ztFp7gHHCD-yDsWwwi3dJioLy0Tw6kDabDetJE', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:44100 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDU5MTh9.LHeTaJ4UMs_OXkUPDBF19L-yJwSW5ldGJmrD0w3167k', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDU5MTh9.LHeTaJ4UMs_OXkUPDBF19L-yJwSW5ldGJmrD0w3167k', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:44104 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwNTkzM30.EvknTvsTcNwUcKdraHDLWLhpCb2Iq5oAn-6ussLeCDA', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:44108 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwNTk3M30.G_xwrgJ10OZSEeAdKEP9X1Gmw9aDbue4Ko03UJCs9g4', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:44134 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwNTk3NX0.yqEZ2OM4OobioVGbTvrmP59crqCl6BhFFE0DMwA1QO4', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:44136 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwNjAwOH0.T4LDiGmnsy1OK1FWlpB-IJZtQKUfbgfI6eud2SPub4Q', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:44166 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwNjUxNH0.XQ4eBGJJGkvJVijtRZvCe4H820pWIWZKm_JEvTpmuY4', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:65156 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwNjg0MX0.o8qlYaEVhUAUowbrZQ3D0K8Ep9jYR6zjwPF2oB4ZNw8', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:44590 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwNjk2N30.UrWBrpCYUk2UI75IX3Zy7PTglIW-klviweyqAyGLLzY', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:44664 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwNzA1OX0.5OFyZf2KdhSDYeYB2AGSnIjG4xOOr0EtMEP43oq3JkY', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:44720 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwNzExMn0.dpM5e4pGp56B1XPWdpxKn-UnbiUJyunFMqeY2wh-wME', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:44750 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwNzE2N30.lbiZhnSp9_5DgH_D-pkTsBMO2A_lcj2dqUXdpvM7B1o', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:44780 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwNzIxMX0.OQa9fuLccOUNa7wX9K9UkIalmlRaT6jw_7WCCvXPXqg', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:44802 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDc0NjF9.qNsinb6eRTFDHCHOrPNL-E0DyVAI1DwvohdnwDbqcaQ', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDc0NjF9.qNsinb6eRTFDHCHOrPNL-E0DyVAI1DwvohdnwDbqcaQ', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:44922 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwNzQ4OH0.RiZFyPcE6Z8MdUt4pZT5iAqV_1bQS-lDMYCd240OYww', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:44948 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwNzYyNn0.B3FuovlSqBaLxCWKMROLXyD-cYeqoU3pRfJInTrTGH8', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:49531 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='Docente'
+Docente
+hello
+buscara
+encontro
+<starlette.responses.Response object at 0x7f89fa6d05f8>
+{'user': 'Docente', 'data': <starlette.responses.Response object at 0x7f89fa6d05f8>}
+INFO:     187.146.14.63:49540 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='Docente'
+Docente
+hello
+buscara
+encontro
+<starlette.responses.Response object at 0x7f89fa6d0550>
+{'user': 'Docente', 'data': <starlette.responses.Response object at 0x7f89fa6d0550>}
+INFO:     187.146.14.63:49547 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDc2NTh9.-Tt1Auhmq-YJjpGWXY6S6HHfJbaVz87yZYl2sZdd23Q', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDc2NTh9.-Tt1Auhmq-YJjpGWXY6S6HHfJbaVz87yZYl2sZdd23Q', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:49554 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwNzY5NX0.fuAnYKUbnu6foKUtOSwPK-jHcp-B8WgDSVSoRGNj99Q', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:45092 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwNzc5N30.wHrIMV5lApL69ddvcu1Ex89rYMMcLPihDgNs5zAMWvA', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:45198 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwNzg2Nn0.fcVgNgdkwKUacP9MntCHft3oSmESHcGRLxTW6wyaTRM', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:45230 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwNzk5Nn0.fc3QjUKdFLbZxcTmNx-9mL2FbgooWheAjYEsl1rD6DE', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:45244 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwODA2OX0._BAvjr6vH_wyGJMVo1fnCZAHlvQO5EqdcH2RfprmJYQ', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:45254 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwODA3M30.MMKjBbLltrlTqQc2yAJc1ciDAl-dpQ1vHIZBFmFrdfM', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:45256 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwODMxNX0.1SFxZ_VCobXM-0Qe7_7qftzEOpJV4yLsVg4mIGAJVZA', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:45288 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwODM3MH0.JqzXGwlj7J3eofCeyYM2MEEpPifzyIZZEW1DuNJTUAw', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:45296 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDgzODN9.J7_qe7pbfZlcYUcyKbls2KKJxblNddvKazal_zlxNkA', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDgzODN9.J7_qe7pbfZlcYUcyKbls2KKJxblNddvKazal_zlxNkA', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:45310 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDgzOTB9.3QMgKvoFQW4BPGRyx0r_Eu0jvhTOXliEe9QbDVU7Uq8', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDgzOTB9.3QMgKvoFQW4BPGRyx0r_Eu0jvhTOXliEe9QbDVU7Uq8', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:45312 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwOTE3OH0.hRLMQvclaiJHWUvZxuq4HxxMHiiVd9EDgn4bMf52Fq4', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:50854 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs2100452' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs2100452' correo=None contraseña='GAAO030901'
+None
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwOTQ0N30.OdgoHR3Tp5IHntw8W55IDedTUBVDh8tI49HYclPWizA', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:45650 - "POST /login HTTP/1.1" 200 OK
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f89fa6d0438>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/253a498b41173d25abda877a666d79b7
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f89fa6d0208>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/253a498b41173d25abda877a666d79b7
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f89fa6d0630>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/253a498b41173d25abda877a666d79b7
+ERROR:root:Error al obtener información  ||| the JSON object must be str, bytes or bytearray, not dict
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYwOTYyNn0.qICanc3uV_VxbglRTLZCCSNMClwl112GS2r-leAP9IM', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:45666 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDk2NjN9.HyXODG2MQb5TaZcj6foaqlbFVVkHeeG-B7uXtd1-8Fs', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDk2NjN9.HyXODG2MQb5TaZcj6foaqlbFVVkHeeG-B7uXtd1-8Fs', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:45698 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDk2NzF9.xxLL5R02eY9gnYDfSW2pP_E_BYu-P7pRUe0kpIYP0k8', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MDk2NzF9.xxLL5R02eY9gnYDfSW2pP_E_BYu-P7pRUe0kpIYP0k8', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:45714 - "POST /login HTTP/1.1" 200 OK
+INFO:     187.146.44.176:54937 - "GET /openapi.json HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYxMzk1M30.2fUKG7cOWORDlKb4sC2HUUqZjFuyBYHU3Js4nBLNe5M', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:46866 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTM5NjR9.zW6EByfJqu9PZflopabxgrX6RkqJrE8njKjnTJE9dV0', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTM5NjR9.zW6EByfJqu9PZflopabxgrX6RkqJrE8njKjnTJE9dV0', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:46874 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTQwNDV9.U3rckDNAIW_HSdj3P2w7U-VmxSe55vKPw5VNuPovg3I', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTQwNDV9.U3rckDNAIW_HSdj3P2w7U-VmxSe55vKPw5VNuPovg3I', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:54197 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTQwOTR9.Nr8xp2pFoi7xmW0QEdAuu14abkIBZuyyh1U7i308pYI', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTQwOTR9.Nr8xp2pFoi7xmW0QEdAuu14abkIBZuyyh1U7i308pYI', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:46882 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTQxMDF9.-XekWouzu9NijMemP032fH1dcqdg0m5VCg79SnGlyZY', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTQxMDF9.-XekWouzu9NijMemP032fH1dcqdg0m5VCg79SnGlyZY', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:46886 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='2' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTQxMDZ9._4EMA0nF8drzBpXzH0B3cwfw4aCbNWrMdYe6DclgXzI', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$GBYcBUCS1t8XRL05B5HKawGVn2aKOx$2d836307881571a3bd01c1399122495a9ef87ad9062a08251abc8bd5c7d20f99', nombre='GARCIA MUÑOZ VIRGINIA', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTQxMDZ9._4EMA0nF8drzBpXzH0B3cwfw4aCbNWrMdYe6DclgXzI', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$GBYcBUCS1t8XRL05B5HKawGVn2aKOx$2d836307881571a3bd01c1399122495a9ef87ad9062a08251abc8bd5c7d20f99', nombre='GARCIA MUÑOZ VIRGINIA', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:46888 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYxNDE3MX0.1RTexJM194dumjjKq5gPqJCgI6KNbK_XdzNJBS3dK4A', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:47006 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTQxOTd9.70Ge-cgSkLGRHAA38v7P-RoCITNtxR9RFuIaFydvusA', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTQxOTd9.70Ge-cgSkLGRHAA38v7P-RoCITNtxR9RFuIaFydvusA', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:47018 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTQzNjB9.tV_tlGe24mU3frfhNy79me6BKLOTySVKa1mpKC0UdD4', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTQzNjB9.tV_tlGe24mU3frfhNy79me6BKLOTySVKa1mpKC0UdD4', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:47034 - "POST /login HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTQzOTh9.i0CQSgT8tgmz60d5MgQ3anjIwPfu2H1Xg7yELlhP2Dg', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTQzOTh9.i0CQSgT8tgmz60d5MgQ3anjIwPfu2H1Xg7yELlhP2Dg', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:47044 - "POST /login HTTP/1.1" 200 OK
+INFO:     187.146.14.63:54682 - "GET /estudiante/estudiante/1 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:54736 - "GET /docente/docente/1 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:54736 - "GET /docente/docente/1 HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTQ5NzZ9.PGAZoBltlgcaK7tYqmdOQhNJEom3NvzBj6hPYQ8cqxU', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTQ5NzZ9.PGAZoBltlgcaK7tYqmdOQhNJEom3NvzBj6hPYQ8cqxU', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:47224 - "POST /login HTTP/1.1" 200 OK
+INFO:     187.146.14.63:47230 - "GET /docente/docente/1 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:47304 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:47326 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:47326 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:47326 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:47326 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:47332 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:47332 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2807]
+2023-06-12 00:15:45.959328: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-06-12 00:15:48.649006: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 00:15:48.649050: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-06-12 00:15:54.793242: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 00:15:54.793425: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 00:15:54.793440: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+INFO:     Started server process [4046]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:3003 (Press CTRL+C to quit)
+INFO:     187.146.44.176:58737 - "GET /docs HTTP/1.1" 200 OK
+INFO:     187.146.44.176:58737 - "GET /openapi.json HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYxNTc1N30.8yZWpQDXOilFy3BBrgxudBv3k1Xx0FKic-KGJsuF-_o', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:47504 - "POST /login HTTP/1.1" 200 OK
+INFO:     187.146.14.63:47510 - "GET /archivo/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png HTTP/1.1" 200 OK
+INFO:     187.146.14.63:47512 - "GET /estudiante/estudiante/5 HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTU3Nzh9.jPaoyDEVkzoktl73KdeesilPBLFIVrUD5b2EIGjjOfk', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTU3Nzh9.jPaoyDEVkzoktl73KdeesilPBLFIVrUD5b2EIGjjOfk', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:47536 - "POST /login HTTP/1.1" 200 OK
+INFO:     187.146.14.63:47540 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:47542 - "GET /docente/docente/1 HTTP/1.1" 200 OK
+[Clase(id=1, nrc='13335', nombre='DISEÑO DE INTERFACES DE USUARI', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='12', lunes=None, martes='15:00-16:59', miercoles=None, jueves='15:00-16:59', viernes=None, sabado=None), Clase(id=5, nrc='86875', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes=None, martes='07:00-08:59', miercoles=None, jueves='07:00-08:59', viernes='11:00-12:59', sabado=None)]
+INFO:     187.146.14.63:55717 - "GET /horarioDocente/horarioDocente/1 HTTP/1.1" 200 OK
+ERROR:root:Error al obtener información de las clases ||| local variable 'clase' referenced before assignment
+obtuvo las clases
+00:25
+00:25
+00:25
+00:25
+00:25
+00:25
+00:25
+00:25
+00:25
+INFO:     187.146.44.176:49982 - "GET /horarioAulas/hora/3 HTTP/1.1" 500 Internal Server Error
+INFO:     187.146.44.176:59265 - "GET /estudiantes HTTP/1.1" 200 OK
+ERROR:root:Error al obtener información de las clases ||| local variable 'clase' referenced before assignment
+obtuvo las clases
+00:30
+00:30
+00:30
+00:30
+00:30
+00:30
+00:30
+00:30
+00:30
+INFO:     187.146.44.176:50020 - "GET /horarioAulas/hora/3 HTTP/1.1" 500 Internal Server Error
+[Clase(id=1, nrc='13335', nombre='DISEÑO DE INTERFACES DE USUARI', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='12', lunes=None, martes='15:00-16:59', miercoles=None, jueves='15:00-16:59', viernes=None, sabado=None), Clase(id=5, nrc='86875', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes=None, martes='07:00-08:59', miercoles=None, jueves='07:00-08:59', viernes='11:00-12:59', sabado=None)]
+INFO:     187.146.14.63:55947 - "GET /horarioDocente/horarioDocente/1 HTTP/1.1" 200 OK
+ERROR:root:Error al obtener información de las clases ||| local variable 'clase' referenced before assignment
+obtuvo las clases
+00:32
+00:32
+00:32
+00:32
+00:32
+00:32
+00:32
+00:32
+00:32
+INFO:     187.146.44.176:50032 - "GET /horarioAulas/hora/3 HTTP/1.1" 500 Internal Server Error
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4046]
+2023-06-12 00:32:53.872219: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-06-12 00:32:54.024061: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 00:32:54.024101: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-06-12 00:32:54.838403: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 00:32:54.838494: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 00:32:54.838507: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+INFO:     Started server process [4187]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:3003 (Press CTRL+C to quit)
+obtuvo las clases
+11:00
+11:00
+11:00
+11:00
+11:00
+11:00
+11:00
+11:00
+11:00
+7
+INFO:     187.146.44.176:50034 - "GET /horarioAulas/hora/3 HTTP/1.1" 200 OK
+2023-06-12
+2023-06-12 00:33:03.156983
+INFO:     187.146.44.176:50036 - "POST /bitacora/zs21004520/3/7 HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTY0MDR9.mo9a1vXOyLYLZihyquVeA8VuoOjJoiKfLvxaDagY4aY', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTY0MDR9.mo9a1vXOyLYLZihyquVeA8VuoOjJoiKfLvxaDagY4aY', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:47704 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=1, nrc='13335', nombre='DISEÑO DE INTERFACES DE USUARI', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='12', lunes=None, martes='15:00-16:59', miercoles=None, jueves='15:00-16:59', viernes=None, sabado=None), Clase(id=5, nrc='86875', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes=None, martes='07:00-08:59', miercoles=None, jueves='07:00-08:59', viernes='11:00-12:59', sabado=None)]
+INFO:     187.146.14.63:47706 - "GET /horarioDocente/horarioDocente/1 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:47722 - "GET /docente/docente/1 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:47720 - "GET /archivo/ HTTP/1.1" 404 Not Found
+[(1, 7, None, 3, 3, 'E', datetime.datetime(2023, 6, 11, 14, 42, 23)), (2, 7, None, 3, 3, 'S', datetime.datetime(2023, 6, 11, 14, 42, 31)), (3, 7, None, 3, 3, 'E', datetime.datetime(2023, 6, 11, 14, 42, 33)), (4, 7, None, 3, 3, 'S', datetime.datetime(2023, 6, 11, 14, 42, 36)), (5, 7, None, 3, 3, 'E', datetime.datetime(2023, 6, 11, 14, 44, 34)), (6, 7, 5, None, 3, 'E', datetime.datetime(2023, 6, 12, 0, 33, 3))]
+INFO:     187.146.44.176:59583 - "GET /bitacora/aula/3 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:47720 - "GET /archivo/ HTTP/1.1" 404 Not Found
+[Clase(id=1, nrc='13335', nombre='DISEÑO DE INTERFACES DE USUARI', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='12', lunes=None, martes='15:00-16:59', miercoles=None, jueves='15:00-16:59', viernes=None, sabado=None), Clase(id=5, nrc='86875', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes=None, martes='07:00-08:59', miercoles=None, jueves='07:00-08:59', viernes='11:00-12:59', sabado=None)]
+INFO:     187.146.14.63:47732 - "GET /horarioDocente/horarioDocente/1 HTTP/1.1" 200 OK
+(1, 'zs21004514', 'pbkdf2:sha256:30$JWjNJsxnXctCb4Ca5UfJ14foY6B5G3$1bbcb3e2dd0ced29142d9c5e3089847b9a55391ba6eba302c9da7137b352801d', 'ESPINOSA ROJAS DANIELA', 'zs21004514@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '271 2387763', 'uploads/profile_picture/7f24ce4a-1567-46d4-947b-696655cd0fad.png')
+
+================ STUDENT DATA ======================
+
+{"login": true, "nombre": "ESPINOSA ROJAS DANIELA", "clases": {"DISEÑO DE INTERFACES DE USUARI": {"general": {"clase": "DISEÑO DE INTERFACES DE USUARI", "acad": "GONZALEZ DIAZ JORGE ERNESTO", "correo": "jorgegonzalez04@uv:mx", "martes": "15:00-16:59", "jueves": "15:00-16:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "12"}, "detalles": {"clase": "DISEÑO DE INTERFACES DE USUARI", "nrc": "13335", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "6"}}, "INGLES III BASICO **": {"general": {"clase": "INGLES III BASICO **", "acad": "GARCIA MUÑOZ VIRGINIA", "correo": "virgarcia@uv:mx", "sabado": "09:00-13:59", "escuela": "Centro De Idiomas", "edificio": "B-CIC", "aula": "6"}, "detalles": {"clase": "INGLES III BASICO **", "nrc": "53269", "situacion": "ORDINARIO", "campus": "CORDOBA", "direccion": "Calle 4 No: 313, Entre Av: 3 y 5: C:P 94500 Col: centro CORDOBA", "modalidad": "Presencial", "nota": "*Este curso no forma parte de las EE de Elección Libre de tu programa, NO se incluye en tu escolaridad*:"}}, "PRINCIPIOS DE DISEÑO DE SOFTWARE": {"general": {"clase": "PRINCIPIOS DE DISEÑO DE SOFTWARE", "acad": "MANCILLA GOMEZ MARTIN", "correo": "mmancilla@uv:mx", "lunes": "07:00-08:59", "miercoles": "07:00-08:59", "viernes": "07:00-08:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PRINCIPIOS DE DISEÑO DE SOFTWARE", "acad": "MANCILLA GOMEZ MARTIN", "correo": "mmancilla@uv:mx", "lunes": "07:00-08:59", "miercoles": "07:00-08:59", "viernes": "07:00-08:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}}, "PARADIGMAS DE PROGRAMACION": {"general": {"clase": "PARADIGMAS DE PROGRAMACION", "acad": "JIMENEZ NIETO YARA ANAHI", "correo": "yjimenez@uv:mx", "martes": "09:00-10:59", "miercoles": "09:00-10:59", "jueves": "09:00-10:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PARADIGMAS DE PROGRAMACION", "acad": "JIMENEZ NIETO YARA ANAHI", "correo": "yjimenez@uv:mx", "martes": "09:00-10:59", "miercoles": "09:00-10:59", "jueves": "09:00-10:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}}, "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE": {"general": {"clase": "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE", "acad": "GONZALEZ DIAZ JORGE ERNESTO", "correo": "jorgegonzalez04@uv:mx", "martes": "07:00-08:59", "jueves": "07:00-08:59", "viernes": "11:00-12:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE", "nrc": "86875", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "10"}}, "REDES": {"general": {"clase": "REDES", "acad": "LOPEZ ALMEIDA JUAN FRANCISCO", "correo": "jflopez@uv:mx", "lunes": "09:00-10:59", "miercoles": "11:00-12:59", "viernes": "09:00-10:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "REDES", "nrc": "86877", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "9"}}, "PROCESOS PARA LA INGENIERIA DE SOFTWARE": {"general": {"clase": "PROCESOS PARA LA INGENIERIA DE SOFTWARE", "acad": "RODRIGUEZ PARADA ADOLFO", "correo": "adrodriguez@uv:mx", "lunes": "11:00-12:59", "martes": "11:00-12:59", "jueves": "11:00-12:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PROCESOS PARA LA INGENIERIA DE SOFTWARE", "nrc": "86880", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "10"}}}}
+
+====================================================
+
+edifciio
+__EDIFICIO
+(1, 'J-EDI1', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+1
+_______________
+(1, '12', 1)
+________________
+clases
+guardar horario :)
+guardar aula :)
+1
+1
+edifciio
+__EDIFICIO
+(2, 'B-CIC', 'Fac Estadistica E Informatica', 'CORDOBA')
+2
+_______________
+(2, '6', 2)
+________________
+clases
+guardar horario :)
+guardar aula :)
+2
+2
+edifciio
+__EDIFICIO
+(1, 'J-EDI1', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+1
+_______________
+(3, '2', 1)
+________________
+clases
+guardar horario :)
+guardar aula :)
+3
+3
+edifciio
+__EDIFICIO
+(1, 'J-EDI1', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+1
+_______________
+(3, '2', 1)
+________________
+clases
+guardar horario :)
+guardar aula :)
+3
+4
+edifciio
+__EDIFICIO
+(1, 'J-EDI1', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+1
+_______________
+(3, '2', 1)
+________________
+clases
+guardar horario :)
+guardar aula :)
+3
+5
+edifciio
+__EDIFICIO
+(1, 'J-EDI1', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+1
+_______________
+(3, '2', 1)
+________________
+clases
+guardar horario :)
+guardar aula :)
+3
+6
+edifciio
+__EDIFICIO
+(1, 'J-EDI1', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+1
+_______________
+(3, '2', 1)
+________________
+clases
+guardar horario :)
+guardar aula :)
+3
+7
+INFO:     187.146.44.176:59623 - "POST /clase HTTP/1.1" 201 Created
+INFO:     187.146.14.63:47742 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:47744 - "GET /docente/docente/1 HTTP/1.1" 200 OK
+ingreso docente
+
+================ STUDENT DATA ======================
+
+{"login": true, "nombre": "ESPINOSA ROJAS DANIELA", "clases": {"DISEÑO DE INTERFACES DE USUARI": {"general": {"clase": "DISEÑO DE INTERFACES DE USUARI", "acad": "GONZALEZ DIAZ JORGE ERNESTO", "correo": "jorgegonzalez04@uv:mx", "martes": "15:00-16:59", "jueves": "15:00-16:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "12"}, "detalles": {"clase": "DISEÑO DE INTERFACES DE USUARI", "nrc": "13335", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "6"}}, "INGLES III BASICO **": {"general": {"clase": "INGLES III BASICO **", "acad": "GARCIA MUÑOZ VIRGINIA", "correo": "virgarcia@uv:mx", "sabado": "09:00-13:59", "escuela": "Centro De Idiomas", "edificio": "B-CIC", "aula": "6"}, "detalles": {"clase": "INGLES III BASICO **", "nrc": "53269", "situacion": "ORDINARIO", "campus": "CORDOBA", "direccion": "Calle 4 No: 313, Entre Av: 3 y 5: C:P 94500 Col: centro CORDOBA", "modalidad": "Presencial", "nota": "*Este curso no forma parte de las EE de Elección Libre de tu programa, NO se incluye en tu escolaridad*:"}}, "PRINCIPIOS DE DISEÑO DE SOFTWARE": {"general": {"clase": "PRINCIPIOS DE DISEÑO DE SOFTWARE", "acad": "MANCILLA GOMEZ MARTIN", "correo": "mmancilla@uv:mx", "lunes": "07:00-08:59", "miercoles": "07:00-08:59", "viernes": "07:00-08:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PRINCIPIOS DE DISEÑO DE SOFTWARE", "acad": "MANCILLA GOMEZ MARTIN", "correo": "mmancilla@uv:mx", "lunes": "07:00-08:59", "miercoles": "07:00-08:59", "viernes": "07:00-08:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}}, "PARADIGMAS DE PROGRAMACION": {"general": {"clase": "PARADIGMAS DE PROGRAMACION", "acad": "JIMENEZ NIETO YARA ANAHI", "correo": "yjimenez@uv:mx", "martes": "09:00-10:59", "miercoles": "09:00-10:59", "jueves": "09:00-10:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PARADIGMAS DE PROGRAMACION", "acad": "JIMENEZ NIETO YARA ANAHI", "correo": "yjimenez@uv:mx", "martes": "09:00-10:59", "miercoles": "09:00-10:59", "jueves": "09:00-10:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}}, "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE": {"general": {"clase": "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE", "acad": "GONZALEZ DIAZ JORGE ERNESTO", "correo": "jorgegonzalez04@uv:mx", "martes": "07:00-08:59", "jueves": "07:00-08:59", "viernes": "11:00-12:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE", "nrc": "86875", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "10"}}, "REDES": {"general": {"clase": "REDES", "acad": "LOPEZ ALMEIDA JUAN FRANCISCO", "correo": "jflopez@uv:mx", "lunes": "09:00-10:59", "miercoles": "11:00-12:59", "viernes": "09:00-10:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "REDES", "nrc": "86877", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "9"}}, "PROCESOS PARA LA INGENIERIA DE SOFTWARE": {"general": {"clase": "PROCESOS PARA LA INGENIERIA DE SOFTWARE", "acad": "RODRIGUEZ PARADA ADOLFO", "correo": "adrodriguez@uv:mx", "lunes": "11:00-12:59", "martes": "11:00-12:59", "jueves": "11:00-12:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PROCESOS PARA LA INGENIERIA DE SOFTWARE", "nrc": "86880", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "10"}}}}
+
+====================================================
+
+GONZALEZ DIAZ JORGE ERNESTO
+1
+(1, 1, 1)
+GARCIA MUÑOZ VIRGINIA
+2
+(2, 2, 2)
+MANCILLA GOMEZ MARTIN
+3
+(3, 3, 3)
+JIMENEZ NIETO YARA ANAHI
+4
+(4, 4, 4)
+GONZALEZ DIAZ JORGE ERNESTO
+5
+(5, 1, 5)
+LOPEZ ALMEIDA JUAN FRANCISCO
+6
+(6, 5, 6)
+RODRIGUEZ PARADA ADOLFO
+7
+(7, 6, 7)
+INFO:     187.146.44.176:59636 - "POST /docente HTTP/1.1" 201 Created
+[Clase(id=3, nrc='PRINCIPIOS DE DISEÑO DE SOFTWARE', nombre='PRINCIPIOS DE DISEÑO DE SOFTWARE', academico='MANCILLA GOMEZ MARTIN', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLAN', edificio='J-EDI1', aula='2', lunes='07:00-08:59', martes=None, miercoles='07:00-08:59', jueves=None, viernes='07:00-08:59', sabado=None)]
+INFO:     187.146.44.176:59651 - "GET /horarioDocente/horarioDocente/3 HTTP/1.1" 200 OK
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.44.176:59654 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+[Clase(id=4, nrc='PARADIGMAS DE PROGRAMACION', nombre='PARADIGMAS DE PROGRAMACION', academico='JIMENEZ NIETO YARA ANAHI', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLAN', edificio='J-EDI1', aula='2', lunes=None, martes='09:00-10:59', miercoles='09:00-10:59', jueves='09:00-10:59', viernes=None, sabado=None)]
+INFO:     187.146.44.176:59654 - "GET /horarioDocente/horarioDocente/4 HTTP/1.1" 200 OK
+[Clase(id=6, nrc='86877', nombre='REDES', academico='LOPEZ ALMEIDA JUAN FRANCISCO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes='09:00-10:59', martes=None, miercoles='11:00-12:59', jueves=None, viernes='09:00-10:59', sabado=None)]
+INFO:     187.146.44.176:59654 - "GET /horarioDocente/horarioDocente/5 HTTP/1.1" 200 OK
+[Clase(id=7, nrc='86880', nombre='PROCESOS PARA LA INGENIERIA DE SOFTWARE', academico='RODRIGUEZ PARADA ADOLFO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes='11:00-12:59', martes='11:00-12:59', miercoles=None, jueves='11:00-12:59', viernes=None, sabado=None)]
+INFO:     187.146.44.176:59654 - "GET /horarioDocente/horarioDocente/6 HTTP/1.1" 200 OK
+[Clase(id=8, nrc='17683', nombre='JAPONES I BASICO **', academico='LOPEZ FLORES GLORIA RUBI', facultad='Fac Estadistica E Informatica', campus='ORIZABA', edificio='A-CIO', aula='13', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.44.176:59662 - "GET /horarioDocente/horarioDocente/7 HTTP/1.1" 200 OK
+[Clase(id=1, nrc='13335', nombre='DISEÑO DE INTERFACES DE USUARI', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='12', lunes=None, martes='15:00-16:59', miercoles=None, jueves='15:00-16:59', viernes=None, sabado=None), Clase(id=5, nrc='86875', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes=None, martes='07:00-08:59', miercoles=None, jueves='07:00-08:59', viernes='11:00-12:59', sabado=None)]
+INFO:     187.146.44.176:59662 - "GET /horarioDocente/horarioDocente/1 HTTP/1.1" 200 OK
+inicio
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTY1MzR9.prTG0-qNEBatBTy74Q9wUFQlQ4i9RRA1Uj3y3Iv5MbM', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MTY1MzR9.prTG0-qNEBatBTy74Q9wUFQlQ4i9RRA1Uj3y3Iv5MbM', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$kHCjPClt42GViOvpvWUvIF0wHBK4Kr$32f0680eec6a478271b8e46939850e7b9bccad69664291342acd80a0b2326cce', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:47756 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=1, nrc='13335', nombre='DISEÑO DE INTERFACES DE USUARI', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='12', lunes=None, martes='15:00-16:59', miercoles=None, jueves='15:00-16:59', viernes=None, sabado=None), Clase(id=5, nrc='86875', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes=None, martes='07:00-08:59', miercoles=None, jueves='07:00-08:59', viernes='11:00-12:59', sabado=None)]
+INFO:     187.146.14.63:47758 - "GET /horarioDocente/horarioDocente/1 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:47762 - "GET /docente/docente/1 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:47760 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:47764 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:47766 - "GET /docente/docente/1 HTTP/1.1" 200 OK
+[Clase(id=1, nrc='13335', nombre='DISEÑO DE INTERFACES DE USUARI', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='12', lunes=None, martes='15:00-16:59', miercoles=None, jueves='15:00-16:59', viernes=None, sabado=None), Clase(id=5, nrc='86875', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes=None, martes='07:00-08:59', miercoles=None, jueves='07:00-08:59', viernes='11:00-12:59', sabado=None)]
+INFO:     187.146.44.176:59679 - "GET /horarioDocente/horarioDocente/1 HTTP/1.1" 200 OK
+INFO:     187.146.44.176:59702 - "GET /clases HTTP/1.1" 200 OK
+INFO:     187.146.44.176:59728 - "POST /clase HTTP/1.1" 422 Unprocessable Entity
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+
+================ STUDENT DATA ======================
+
+{"login": true, "nombre": "GALINDO ALDUCIN OMAR JAZAEL", "clases": {"INGLES I": {"general": {"clase": "INGLES I", "acad": "TZOPITL CABRERA ELSA", "correo": "etzopitl@uv:mx", "escuela": "Centro De Autoacceso", "edificio": "USBI-J", "aula": "CAA-USBI"}, "detalles": {"clase": "INGLES I", "nrc": "81371", "situacion": "ORDINARIO 2DA INSCR", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM 1, IXTACZOQUITLAN (AREAS DE CENTRO DE COMPUTO Y BIBLIOTECA) LA USBI SE ENCUENTRA EN EL CAMPUS IXTACZOQUITLAN", "modalidad": "Autoaprendizaje", "creditos": "6"}}, "PRINCIPIOS DE DISEÑO DE SOFTWARE": {"general": {"clase": "PRINCIPIOS DE DISEÑO DE SOFTWARE", "acad": "GONZALEZ MARTINEZ MARIA DOLORES", "correo": "mariagonzalez03@uv:mx", "lunes": "15:00-16:59", "miercoles": "15:00-16:59", "viernes": "15:00-16:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PRINCIPIOS DE DISEÑO DE SOFTWARE", "nrc": "94854", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "10"}}, "REDES": {"general": {"clase": "REDES", "acad": "RUIZ JURADO ALDO CARLOS", "correo": "aldruiz@uv:mx", "miercoles": "13:00-14:59", "jueves": "15:00-16:59", "viernes": "13:00-14:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "REDES", "acad": "RUIZ JURADO ALDO CARLOS", "correo": "aldruiz@uv:mx", "miercoles": "13:00-14:59", "jueves": "15:00-16:59", "viernes": "13:00-14:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}}, "PROCESOS PARA LA INGENIERIA DE SOFTWARE": {"general": {"clase": "PROCESOS PARA LA INGENIERIA DE SOFTWARE", "acad": "RODRIGUEZ PARADA ADOLFO", "correo": "adrodriguez@uv:mx", "lunes": "13:00-14:59", "martes": "13:00-14:59", "jueves": "13:00-14:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PROCESOS PARA LA INGENIERIA DE SOFTWARE", "acad": "RODRIGUEZ PARADA ADOLFO", "correo": "adrodriguez@uv:mx", "lunes": "13:00-14:59", "martes": "13:00-14:59", "jueves": "13:00-14:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}}, "PARADIGMAS DE PROGRAMACION": {"general": {"clase": "PARADIGMAS DE PROGRAMACION", "acad": "CENTENO TELLEZ ADOLFO", "correo": "acenteno@uv:mx", "martes": "15:00-16:59", "jueves": "17:00-18:59", "viernes": "17:00-18:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PARADIGMAS DE PROGRAMACION", "nrc": "94857", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "10"}}, "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE": {"general": {"clase": "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE", "acad": "GONZALEZ DIAZ JORGE ERNESTO", "correo": "jorgegonzalez04@uv:mx", "lunes": "17:00-18:59", "martes": "17:00-18:59", "miercoles": "17:00-18:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE", "nrc": "94858", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "10"}}}}
+
+====================================================
+
+edifciio
+creara
+USBI-J
+###########3
+Fac Estadistica E Informatica
+hi
+!
+IXTACZOQUITLÁN
+<class 'schemas.edificio.Edificio'>
+__EDIFICIO
+(4, 'USBI-J', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+4
+_______________
+None
+________________
+aulas
+clases
+guardar horario :)
+guardar aula :)
+6
+10
+edifciio
+__EDIFICIO
+(1, 'J-EDI1', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+1
+_______________
+(3, '2', 1)
+________________
+clases
+guardar horario :)
+guardar aula :)
+3
+11
+edifciio
+__EDIFICIO
+(1, 'J-EDI1', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+1
+_______________
+(3, '2', 1)
+________________
+clases
+guardar horario :)
+guardar aula :)
+3
+12
+edifciio
+__EDIFICIO
+(1, 'J-EDI1', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+1
+_______________
+(3, '2', 1)
+________________
+clases
+guardar horario :)
+guardar aula :)
+3
+13
+edifciio
+__EDIFICIO
+(1, 'J-EDI1', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+1
+_______________
+(3, '2', 1)
+________________
+clases
+guardar horario :)
+guardar aula :)
+3
+14
+edifciio
+__EDIFICIO
+(1, 'J-EDI1', 'Fac Estadistica E Informatica', 'IXTACZOQUITLÁN')
+1
+_______________
+(3, '2', 1)
+________________
+clases
+guardar horario :)
+guardar aula :)
+3
+15
+INFO:     187.146.44.176:59747 - "POST /clase HTTP/1.1" 201 Created
+ingreso docente
+
+================ STUDENT DATA ======================
+
+{"login": true, "nombre": "GALINDO ALDUCIN OMAR JAZAEL", "clases": {"INGLES I": {"general": {"clase": "INGLES I", "acad": "TZOPITL CABRERA ELSA", "correo": "etzopitl@uv:mx", "escuela": "Centro De Autoacceso", "edificio": "USBI-J", "aula": "CAA-USBI"}, "detalles": {"clase": "INGLES I", "nrc": "81371", "situacion": "ORDINARIO 2DA INSCR", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM 1, IXTACZOQUITLAN (AREAS DE CENTRO DE COMPUTO Y BIBLIOTECA) LA USBI SE ENCUENTRA EN EL CAMPUS IXTACZOQUITLAN", "modalidad": "Autoaprendizaje", "creditos": "6"}}, "PRINCIPIOS DE DISEÑO DE SOFTWARE": {"general": {"clase": "PRINCIPIOS DE DISEÑO DE SOFTWARE", "acad": "GONZALEZ MARTINEZ MARIA DOLORES", "correo": "mariagonzalez03@uv:mx", "lunes": "15:00-16:59", "miercoles": "15:00-16:59", "viernes": "15:00-16:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PRINCIPIOS DE DISEÑO DE SOFTWARE", "nrc": "94854", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "10"}}, "REDES": {"general": {"clase": "REDES", "acad": "RUIZ JURADO ALDO CARLOS", "correo": "aldruiz@uv:mx", "miercoles": "13:00-14:59", "jueves": "15:00-16:59", "viernes": "13:00-14:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "REDES", "acad": "RUIZ JURADO ALDO CARLOS", "correo": "aldruiz@uv:mx", "miercoles": "13:00-14:59", "jueves": "15:00-16:59", "viernes": "13:00-14:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}}, "PROCESOS PARA LA INGENIERIA DE SOFTWARE": {"general": {"clase": "PROCESOS PARA LA INGENIERIA DE SOFTWARE", "acad": "RODRIGUEZ PARADA ADOLFO", "correo": "adrodriguez@uv:mx", "lunes": "13:00-14:59", "martes": "13:00-14:59", "jueves": "13:00-14:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PROCESOS PARA LA INGENIERIA DE SOFTWARE", "acad": "RODRIGUEZ PARADA ADOLFO", "correo": "adrodriguez@uv:mx", "lunes": "13:00-14:59", "martes": "13:00-14:59", "jueves": "13:00-14:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}}, "PARADIGMAS DE PROGRAMACION": {"general": {"clase": "PARADIGMAS DE PROGRAMACION", "acad": "CENTENO TELLEZ ADOLFO", "correo": "acenteno@uv:mx", "martes": "15:00-16:59", "jueves": "17:00-18:59", "viernes": "17:00-18:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PARADIGMAS DE PROGRAMACION", "nrc": "94857", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "10"}}, "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE": {"general": {"clase": "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE", "acad": "GONZALEZ DIAZ JORGE ERNESTO", "correo": "jorgegonzalez04@uv:mx", "lunes": "17:00-18:59", "martes": "17:00-18:59", "miercoles": "17:00-18:59", "escuela": "Fac Estadistica E Informatica", "edificio": "J-EDI1", "aula": "2"}, "detalles": {"clase": "PRINCIPIOS DE CONSTRUCCION DE SOFTWARE", "nrc": "94858", "situacion": "ORDINARIO", "campus": "IXTACZOQUITLÁN", "direccion": "CARRETERA ESTATAL SUMIDERO DOS RIOS KM: 1", "telefono": "2727280814", "modalidad": "Presencial", "creditos": "10"}}}}
+
+====================================================
+
+TZOPITL CABRERA ELSA
+10
+None
+guardara
+GONZALEZ MARTINEZ MARIA DOLORES
+11
+None
+guardara
+RUIZ JURADO ALDO CARLOS
+12
+None
+guardara
+RODRIGUEZ PARADA ADOLFO
+13
+None
+guardara
+CENTENO TELLEZ ADOLFO
+14
+None
+guardara
+GONZALEZ DIAZ JORGE ERNESTO
+15
+None
+guardara
+INFO:     187.146.44.176:59759 - "POST /docente HTTP/1.1" 201 Created
+[Clase(id=1, nrc='13335', nombre='DISEÑO DE INTERFACES DE USUARI', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='12', lunes=None, martes='15:00-16:59', miercoles=None, jueves='15:00-16:59', viernes=None, sabado=None), Clase(id=5, nrc='86875', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes=None, martes='07:00-08:59', miercoles=None, jueves='07:00-08:59', viernes='11:00-12:59', sabado=None), Clase(id=15, nrc='94858', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes='17:00-18:59', martes='17:00-18:59', miercoles='17:00-18:59', jueves=None, viernes=None, sabado=None)]
+INFO:     187.146.44.176:59771 - "GET /horarioDocente/horarioDocente/1 HTTP/1.1" 200 OK
+[Clase(id=1, nrc='13335', nombre='DISEÑO DE INTERFACES DE USUARI', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='12', lunes=None, martes='15:00-16:59', miercoles=None, jueves='15:00-16:59', viernes=None, sabado=None), Clase(id=5, nrc='86875', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes=None, martes='07:00-08:59', miercoles=None, jueves='07:00-08:59', viernes='11:00-12:59', sabado=None), Clase(id=15, nrc='94858', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes='17:00-18:59', martes='17:00-18:59', miercoles='17:00-18:59', jueves=None, viernes=None, sabado=None)]
+INFO:     187.146.14.63:47888 - "GET /horarioDocente/horarioDocente/1 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:47916 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:47918 - "GET /docente/docente/1 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:47996 - "GET /docente/docente/1 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:47994 - "GET /archivo/ HTTP/1.1" 404 Not Found
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYxNzUxMX0.wUFH55rxiuAoKldji3mb8V5dKnBWAswauO6wwiwBzmk', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:47998 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=10, nrc='81371', nombre='INGLES I', academico='TZOPITL CABRERA ELSA', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='USBI-J', aula='CAA-USBI', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado=None), Clase(id=11, nrc='94854', nombre='PRINCIPIOS DE DISEÑO DE SOFTWARE', academico='GONZALEZ MARTINEZ MARIA DOLORES', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes='15:00-16:59', martes=None, miercoles='15:00-16:59', jueves=None, viernes='15:00-16:59', sabado=None), Clase(id=12, nrc='REDES', nombre='REDES', academico='RUIZ JURADO ALDO CARLOS', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLAN', edificio='J-EDI1', aula='2', lunes=None, martes=None, miercoles='13:00-14:59', jueves='15:00-16:59', viernes='13:00-14:59', sabado=None), Clase(id=13, nrc='PROCESOS PARA LA INGENIERIA DE SOFTWARE', nombre='PROCESOS PARA LA INGENIERIA DE SOFTWARE', academico='RODRIGUEZ PARADA ADOLFO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLAN', edificio='J-EDI1', aula='2', lunes='13:00-14:59', martes='13:00-14:59', miercoles=None, jueves='13:00-14:59', viernes=None, sabado=None), Clase(id=14, nrc='94857', nombre='PARADIGMAS DE PROGRAMACION', academico='CENTENO TELLEZ ADOLFO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes=None, martes='15:00-16:59', miercoles=None, jueves='17:00-18:59', viernes='17:00-18:59', sabado=None), Clase(id=15, nrc='94858', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes='17:00-18:59', martes='17:00-18:59', miercoles='17:00-18:59', jueves=None, viernes=None, sabado=None)]
+INFO:     187.146.14.63:48000 - "GET /horarioEstudiante/horarioEstudiante/5 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:48002 - "GET /archivo/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png HTTP/1.1" 200 OK
+INFO:     187.146.14.63:48004 - "GET /estudiante/estudiante/5 HTTP/1.1" 200 OK
+inicio
+id=None matricula='zs2100450' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs2100450' correo=None contraseña='GAAO030901'
+None
+inicio
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYxODI4MX0.Cnr9mnzBJA6b4S3CRAJpaFL-V1A3I7cGobzWgF5HuoY', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:48268 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=10, nrc='81371', nombre='INGLES I', academico='TZOPITL CABRERA ELSA', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='USBI-J', aula='CAA-USBI', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado=None), Clase(id=11, nrc='94854', nombre='PRINCIPIOS DE DISEÑO DE SOFTWARE', academico='GONZALEZ MARTINEZ MARIA DOLORES', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes='15:00-16:59', martes=None, miercoles='15:00-16:59', jueves=None, viernes='15:00-16:59', sabado=None), Clase(id=12, nrc='REDES', nombre='REDES', academico='RUIZ JURADO ALDO CARLOS', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLAN', edificio='J-EDI1', aula='2', lunes=None, martes=None, miercoles='13:00-14:59', jueves='15:00-16:59', viernes='13:00-14:59', sabado=None), Clase(id=13, nrc='PROCESOS PARA LA INGENIERIA DE SOFTWARE', nombre='PROCESOS PARA LA INGENIERIA DE SOFTWARE', academico='RODRIGUEZ PARADA ADOLFO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLAN', edificio='J-EDI1', aula='2', lunes='13:00-14:59', martes='13:00-14:59', miercoles=None, jueves='13:00-14:59', viernes=None, sabado=None), Clase(id=14, nrc='94857', nombre='PARADIGMAS DE PROGRAMACION', academico='CENTENO TELLEZ ADOLFO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes=None, martes='15:00-16:59', miercoles=None, jueves='17:00-18:59', viernes='17:00-18:59', sabado=None), Clase(id=15, nrc='94858', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes='17:00-18:59', martes='17:00-18:59', miercoles='17:00-18:59', jueves=None, viernes=None, sabado=None)]
+INFO:     187.146.14.63:48270 - "GET /horarioEstudiante/horarioEstudiante/5 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:48274 - "GET /estudiante/estudiante/5 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:48272 - "GET /archivo/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png HTTP/1.1" 200 OK
+[Clase(id=10, nrc='81371', nombre='INGLES I', academico='TZOPITL CABRERA ELSA', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='USBI-J', aula='CAA-USBI', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado=None), Clase(id=11, nrc='94854', nombre='PRINCIPIOS DE DISEÑO DE SOFTWARE', academico='GONZALEZ MARTINEZ MARIA DOLORES', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes='15:00-16:59', martes=None, miercoles='15:00-16:59', jueves=None, viernes='15:00-16:59', sabado=None), Clase(id=12, nrc='REDES', nombre='REDES', academico='RUIZ JURADO ALDO CARLOS', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLAN', edificio='J-EDI1', aula='2', lunes=None, martes=None, miercoles='13:00-14:59', jueves='15:00-16:59', viernes='13:00-14:59', sabado=None), Clase(id=13, nrc='PROCESOS PARA LA INGENIERIA DE SOFTWARE', nombre='PROCESOS PARA LA INGENIERIA DE SOFTWARE', academico='RODRIGUEZ PARADA ADOLFO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLAN', edificio='J-EDI1', aula='2', lunes='13:00-14:59', martes='13:00-14:59', miercoles=None, jueves='13:00-14:59', viernes=None, sabado=None), Clase(id=14, nrc='94857', nombre='PARADIGMAS DE PROGRAMACION', academico='CENTENO TELLEZ ADOLFO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes=None, martes='15:00-16:59', miercoles=None, jueves='17:00-18:59', viernes='17:00-18:59', sabado=None), Clase(id=15, nrc='94858', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes='17:00-18:59', martes='17:00-18:59', miercoles='17:00-18:59', jueves=None, viernes=None, sabado=None)]
+INFO:     187.146.14.63:48276 - "GET /horarioEstudiante/horarioEstudiante/5 HTTP/1.1" 200 OK
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f75f4ff4748>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/a72a2c4ef5689bdbf78a8d9cc7b11a00
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f75f51262e8>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/a72a2c4ef5689bdbf78a8d9cc7b11a00
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f75f502fa90>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/a72a2c4ef5689bdbf78a8d9cc7b11a00
+ERROR:root:Error al obtener información  ||| the JSON object must be str, bytes or bytearray, not dict
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4187]
+2023-06-12 01:46:02.048898: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-06-12 01:46:02.213880: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 01:46:02.213929: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-06-12 01:46:03.058076: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 01:46:03.058169: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 01:46:03.058194: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+INFO:     Started server process [5314]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:3003 (Press CTRL+C to quit)
+ERROR:root:Error al obtener información  ||| 'NoneType' object is not subscriptable
+inicio
+id='sd21' matricula=None correo=None contraseña='string'
+INFO:     187.146.44.176:59612 - "POST /login HTTP/1.1" 500 Internal Server Error
+inicio
+id=None matricula='1' correo=None contraseña='contraseña'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiY29udHJhc2VcdTAwZjFhIiwiZXhwIjoxNjg2NjIzMTQ5fQ.5NiU5uhP-auWUImih3Qbj_26zfy9fKIckl5JBe7T4tw', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$X2LCBwvjsoWyco85JjMjlLfL69aOY5$a01d51703ad5a3a1b8deff0d40f55ab57705bb532419090588df56c9d77e88e2', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiY29udHJhc2VcdTAwZjFhIiwiZXhwIjoxNjg2NjIzMTQ5fQ.5NiU5uhP-auWUImih3Qbj_26zfy9fKIckl5JBe7T4tw', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$X2LCBwvjsoWyco85JjMjlLfL69aOY5$a01d51703ad5a3a1b8deff0d40f55ab57705bb532419090588df56c9d77e88e2', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:49454 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=1, nrc='13335', nombre='DISEÑO DE INTERFACES DE USUARI', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='12', lunes=None, martes='15:00-16:59', miercoles=None, jueves='15:00-16:59', viernes=None, sabado=None), Clase(id=5, nrc='86875', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes=None, martes='07:00-08:59', miercoles=None, jueves='07:00-08:59', viernes='11:00-12:59', sabado=None), Clase(id=15, nrc='94858', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes='17:00-18:59', martes='17:00-18:59', miercoles='17:00-18:59', jueves=None, viernes=None, sabado=None)]
+INFO:     187.146.14.63:49456 - "GET /horarioDocente/horarioDocente/1 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:49460 - "GET /docente/docente/1 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:49458 - "GET /archivo/ HTTP/1.1" 404 Not Found
+inicio
+id=None matricula='1' correo=None contraseña='contraseña'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiY29udHJhc2VcdTAwZjFhIiwiZXhwIjoxNjg2NjI0MDc0fQ.-FwNusWhBJCe2Wkw4QNdWNkHHODRux6pbx1LC1kCJvs', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$X2LCBwvjsoWyco85JjMjlLfL69aOY5$a01d51703ad5a3a1b8deff0d40f55ab57705bb532419090588df56c9d77e88e2', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiY29udHJhc2VcdTAwZjFhIiwiZXhwIjoxNjg2NjI0MDc0fQ.-FwNusWhBJCe2Wkw4QNdWNkHHODRux6pbx1LC1kCJvs', 'user': Docente(id=1, contraseña='pbkdf2:sha256:30$X2LCBwvjsoWyco85JjMjlLfL69aOY5$a01d51703ad5a3a1b8deff0d40f55ab57705bb532419090588df56c9d77e88e2', nombre='GONZALEZ DIAZ JORGE ERNESTO', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:49546 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=1, nrc='13335', nombre='DISEÑO DE INTERFACES DE USUARI', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='12', lunes=None, martes='15:00-16:59', miercoles=None, jueves='15:00-16:59', viernes=None, sabado=None), Clase(id=5, nrc='86875', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes=None, martes='07:00-08:59', miercoles=None, jueves='07:00-08:59', viernes='11:00-12:59', sabado=None), Clase(id=15, nrc='94858', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes='17:00-18:59', martes='17:00-18:59', miercoles='17:00-18:59', jueves=None, viernes=None, sabado=None)]
+INFO:     187.146.14.63:49548 - "GET /horarioDocente/horarioDocente/1 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:49550 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:49552 - "GET /docente/docente/1 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:62732 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:49876 - "GET /docente/docente/1 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:49874 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:49874 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:49878 - "GET /docente/docente/1 HTTP/1.1" 200 OK
+inicio
+id=None matricula='2' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MjU2MjF9.g8l7m5ZEYQl7Saw0ObnBog1hPqL8gbnxIrUVpjU4JD0', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$GBYcBUCS1t8XRL05B5HKawGVn2aKOx$2d836307881571a3bd01c1399122495a9ef87ad9062a08251abc8bd5c7d20f99', nombre='GARCIA MUÑOZ VIRGINIA', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MjU2MjF9.g8l7m5ZEYQl7Saw0ObnBog1hPqL8gbnxIrUVpjU4JD0', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$GBYcBUCS1t8XRL05B5HKawGVn2aKOx$2d836307881571a3bd01c1399122495a9ef87ad9062a08251abc8bd5c7d20f99', nombre='GARCIA MUÑOZ VIRGINIA', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:49882 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.14.63:49884 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:49886 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:49888 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+inicio
+id=None matricula='2' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MjU2Mzd9.kKCRPT2hYLHXgo51Fmzg4otMWorkkxchXcrUDkZ1xI0', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$GBYcBUCS1t8XRL05B5HKawGVn2aKOx$2d836307881571a3bd01c1399122495a9ef87ad9062a08251abc8bd5c7d20f99', nombre='GARCIA MUÑOZ VIRGINIA', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MjU2Mzd9.kKCRPT2hYLHXgo51Fmzg4otMWorkkxchXcrUDkZ1xI0', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$GBYcBUCS1t8XRL05B5HKawGVn2aKOx$2d836307881571a3bd01c1399122495a9ef87ad9062a08251abc8bd5c7d20f99', nombre='GARCIA MUÑOZ VIRGINIA', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:49890 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.14.63:49892 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:49896 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:49894 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5314]

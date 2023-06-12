@@ -13,7 +13,9 @@ class Docente(BaseModel):
     foto_perfil: Optional[str]
 
 class DocenteUpdate(BaseModel):
+    id: str
     contraseña: Optional[str]
+    new_password: Optional[str]
     telefono: Optional[str]
     correo: Optional[EmailStr]  
     campus: Optional[str]
