@@ -1453,3 +1453,630 @@ INFO:     Shutting down
 INFO:     Waiting for application shutdown.
 INFO:     Application shutdown complete.
 INFO:     Finished server process [5757]
+2023-06-12 03:46:59.120787: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-06-12 03:46:59.276798: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 03:46:59.276833: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-06-12 03:47:00.080206: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 03:47:00.080289: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 03:47:00.080302: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+INFO:     Started server process [5960]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:3003 (Press CTRL+C to quit)
+inicio
+True
+id=None matricula='2' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MjgwMjd9.Zzne9iCkmmBa_vXTH58LscTu3lbFBENfez6Z8xzoPMM', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$GBYcBUCS1t8XRL05B5HKawGVn2aKOx$2d836307881571a3bd01c1399122495a9ef87ad9062a08251abc8bd5c7d20f99', nombre='GARCIA MUÑOZ VIRGINIA', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MjgwMjd9.Zzne9iCkmmBa_vXTH58LscTu3lbFBENfez6Z8xzoPMM', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$GBYcBUCS1t8XRL05B5HKawGVn2aKOx$2d836307881571a3bd01c1399122495a9ef87ad9062a08251abc8bd5c7d20f99', nombre='GARCIA MUÑOZ VIRGINIA', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.44.176:61131 - "POST /login HTTP/1.1" 200 OK
+inicio
+True
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+<starlette.responses.Response object at 0x7f32539a23c8>
+{'user': 'Docente', 'data': <starlette.responses.Response object at 0x7f32539a23c8>}
+INFO:     187.146.14.63:37522 - "POST /login HTTP/1.1" 200 OK
+inicio
+True
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+<starlette.responses.Response object at 0x7f32539a2cc0>
+{'user': 'Docente', 'data': <starlette.responses.Response object at 0x7f32539a2cc0>}
+INFO:     187.146.14.63:37524 - "POST /login HTTP/1.1" 200 OK
+INFO:     187.146.14.63:64861 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:64861 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+inicio
+True
+id=None matricula='2' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MjgyMjN9.wPc6-mdOVnUWvbhizy6ziXP0akvU3nCfKx8P-lfuC6c', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$GBYcBUCS1t8XRL05B5HKawGVn2aKOx$2d836307881571a3bd01c1399122495a9ef87ad9062a08251abc8bd5c7d20f99', nombre='GARCIA MUÑOZ VIRGINIA', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2MjgyMjN9.wPc6-mdOVnUWvbhizy6ziXP0akvU3nCfKx8P-lfuC6c', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$GBYcBUCS1t8XRL05B5HKawGVn2aKOx$2d836307881571a3bd01c1399122495a9ef87ad9062a08251abc8bd5c7d20f99', nombre='GARCIA MUÑOZ VIRGINIA', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:37562 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.14.63:37564 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37566 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:37568 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+inicio
+True
+id=None matricula='2' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2Mjg1OTN9.u03p1S6Ttg2wiHC696sTiszZm3JtLnYz69lcNldRQhA', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$GBYcBUCS1t8XRL05B5HKawGVn2aKOx$2d836307881571a3bd01c1399122495a9ef87ad9062a08251abc8bd5c7d20f99', nombre='GARCIA MUÑOZ VIRGINIA', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2Mjg1OTN9.u03p1S6Ttg2wiHC696sTiszZm3JtLnYz69lcNldRQhA', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$GBYcBUCS1t8XRL05B5HKawGVn2aKOx$2d836307881571a3bd01c1399122495a9ef87ad9062a08251abc8bd5c7d20f99', nombre='GARCIA MUÑOZ VIRGINIA', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:37618 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.14.63:37620 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37622 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:37624 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+inicio
+True
+id=None matricula='2' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2Mjg5OTh9.gtIpYIXdc8sQ0WS0ZDIMrrQMaiNAuDc4qKNfilI9XKQ', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$GBYcBUCS1t8XRL05B5HKawGVn2aKOx$2d836307881571a3bd01c1399122495a9ef87ad9062a08251abc8bd5c7d20f99', nombre='GARCIA MUÑOZ VIRGINIA', telefono=None, correo=None, campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoicGFzc3dvcmQiLCJleHAiOjE2ODY2Mjg5OTh9.gtIpYIXdc8sQ0WS0ZDIMrrQMaiNAuDc4qKNfilI9XKQ', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$GBYcBUCS1t8XRL05B5HKawGVn2aKOx$2d836307881571a3bd01c1399122495a9ef87ad9062a08251abc8bd5c7d20f99', nombre='GARCIA MUÑOZ VIRGINIA', telefono=None, correo=None, campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:37682 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.14.63:37684 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37688 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:37690 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+True
+checo contraseña :)
+INFO:     187.146.14.63:37692 - "PUT /docente/2 HTTP/1.1" 201 Created
+INFO:     187.146.14.63:37694 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:37696 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37694 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:37698 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37694 - "GET /archivo/ HTTP/1.1" 404 Not Found
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.14.63:37700 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37702 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:37704 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+inicio
+True
+id=None matricula='2' correo=None contraseña='123456'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiMTIzNDU2IiwiZXhwIjoxNjg2NjI5MTQ4fQ.UHNwmEswodg3I8l_ezVFFVI6wDzyDenV7sv-sdEfAME', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$ZHFAH6FIMxTpC6j3vBe8BwwnFFiOj8$72776c66551462afe688e0f173b1f884f24b7f2372d46442b5548811129e48ac', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2721000238', correo='prueba@gmail.com', campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiMTIzNDU2IiwiZXhwIjoxNjg2NjI5MTQ4fQ.UHNwmEswodg3I8l_ezVFFVI6wDzyDenV7sv-sdEfAME', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$ZHFAH6FIMxTpC6j3vBe8BwwnFFiOj8$72776c66551462afe688e0f173b1f884f24b7f2372d46442b5548811129e48ac', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2721000238', correo='prueba@gmail.com', campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:37706 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.14.63:37708 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37710 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:37712 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37718 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:37720 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37718 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:37722 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37726 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37724 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:37762 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:37764 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37774 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:37776 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37782 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37780 - "GET /archivo/ HTTP/1.1" 404 Not Found
+inicio
+True
+id=None matricula='2' correo=None contraseña='123456'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiMTIzNDU2IiwiZXhwIjoxNjg2NjI5ODYwfQ.DIltIXLV4QqmTptOj_MuXQguEhWW4DOvjF6S8fxm4d0', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$ZHFAH6FIMxTpC6j3vBe8BwwnFFiOj8$72776c66551462afe688e0f173b1f884f24b7f2372d46442b5548811129e48ac', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2721000238', correo='prueba@gmail.com', campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiMTIzNDU2IiwiZXhwIjoxNjg2NjI5ODYwfQ.DIltIXLV4QqmTptOj_MuXQguEhWW4DOvjF6S8fxm4d0', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$ZHFAH6FIMxTpC6j3vBe8BwwnFFiOj8$72776c66551462afe688e0f173b1f884f24b7f2372d46442b5548811129e48ac', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2721000238', correo='prueba@gmail.com', campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:37784 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.14.63:37786 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37788 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:37790 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+True
+checo contraseña :)
+INFO:     187.146.14.63:37808 - "PUT /docente/2 HTTP/1.1" 201 Created
+inicio
+True
+id=None matricula='2' correo=None contraseña='98765'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiOTg3NjUiLCJleHAiOjE2ODY2MzAwMDJ9.VB7N6iJSHUg0Fd_25mP-Sq3M8zeuTE2XXc8-3cXO8jQ', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$3VWDvWQ6dxfSUwFc7KTIWkjs28kWHY$3564ebda2143dc4f4f1606cbdc710edddd83077b8f6821a154198f777efe8e6e', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2711000983', correo='prueba2@gmail.com', campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiOTg3NjUiLCJleHAiOjE2ODY2MzAwMDJ9.VB7N6iJSHUg0Fd_25mP-Sq3M8zeuTE2XXc8-3cXO8jQ', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$3VWDvWQ6dxfSUwFc7KTIWkjs28kWHY$3564ebda2143dc4f4f1606cbdc710edddd83077b8f6821a154198f777efe8e6e', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2711000983', correo='prueba2@gmail.com', campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:37810 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.14.63:37812 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37814 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:37816 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+inicio
+True
+id=None matricula='2' correo=None contraseña='98765'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiOTg3NjUiLCJleHAiOjE2ODY2MzAxMTJ9.GspXMmIgHGE43qhieBTc0qpYpkqZQ1kgnOTmoMpIZuw', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$3VWDvWQ6dxfSUwFc7KTIWkjs28kWHY$3564ebda2143dc4f4f1606cbdc710edddd83077b8f6821a154198f777efe8e6e', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2711000983', correo='prueba2@gmail.com', campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiOTg3NjUiLCJleHAiOjE2ODY2MzAxMTJ9.GspXMmIgHGE43qhieBTc0qpYpkqZQ1kgnOTmoMpIZuw', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$3VWDvWQ6dxfSUwFc7KTIWkjs28kWHY$3564ebda2143dc4f4f1606cbdc710edddd83077b8f6821a154198f777efe8e6e', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2711000983', correo='prueba2@gmail.com', campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:37858 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.14.63:37860 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37864 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37862 - "GET /archivo/ HTTP/1.1" 404 Not Found
+True
+checo contraseña :)
+INFO:     187.146.14.63:37866 - "PUT /docente/2 HTTP/1.1" 201 Created
+inicio
+True
+id=None matricula='2' correo=None contraseña='123456'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiMTIzNDU2IiwiZXhwIjoxNjg2NjMwMjc0fQ.Le_i_GSJxMEojH-d9oIHNzhmBYs2vQ0Th7RpIS1S6cE', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$1H7WFtB0LwZGSHuw3gcjxcpMnG8Vjv$93a2b31168fb100c05f1f62854c97cfac1dad5908330887f72f045c0dd16bf39', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2731000000', correo='prueba1@gmail.com', campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiMTIzNDU2IiwiZXhwIjoxNjg2NjMwMjc0fQ.Le_i_GSJxMEojH-d9oIHNzhmBYs2vQ0Th7RpIS1S6cE', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$1H7WFtB0LwZGSHuw3gcjxcpMnG8Vjv$93a2b31168fb100c05f1f62854c97cfac1dad5908330887f72f045c0dd16bf39', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2731000000', correo='prueba1@gmail.com', campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:37900 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.14.63:37902 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37906 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37904 - "GET /archivo/ HTTP/1.1" 404 Not Found
+True
+checo contraseña :)
+INFO:     187.146.14.63:37908 - "PUT /docente/2 HTTP/1.1" 201 Created
+inicio
+True
+id=None matricula='2' correo=None contraseña='hola1'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiaG9sYTEiLCJleHAiOjE2ODY2MzAzMzZ9.bsjxqJ4IeVqX73cHBk_Dlv3yoIhuXST947s7vdfbn9Y', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$qeZiNb17OfVFzr71PLaDFUqFxnns1f$be009e0d062a8f1853019c0ddfacf83729a026b3ee001c184789ebf47fd922a4', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2730000000', correo='hola@gmail.com', campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiaG9sYTEiLCJleHAiOjE2ODY2MzAzMzZ9.bsjxqJ4IeVqX73cHBk_Dlv3yoIhuXST947s7vdfbn9Y', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$qeZiNb17OfVFzr71PLaDFUqFxnns1f$be009e0d062a8f1853019c0ddfacf83729a026b3ee001c184789ebf47fd922a4', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2730000000', correo='hola@gmail.com', campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:37916 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.14.63:37918 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+INFO:     187.146.44.176:61923 - "GET /docs HTTP/1.1" 200 OK
+INFO:     187.146.44.176:61923 - "GET /openapi.json HTTP/1.1" 200 OK
+inicio
+True
+id=None matricula='2' correo=None contraseña='hola1'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiaG9sYTEiLCJleHAiOjE2ODY2MzE0ODF9.pY0XxkzmFzPwfWm8Cm-x5uoQBCkz13eQ0_9B_sVtGCg', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$qeZiNb17OfVFzr71PLaDFUqFxnns1f$be009e0d062a8f1853019c0ddfacf83729a026b3ee001c184789ebf47fd922a4', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2730000000', correo='hola@gmail.com', campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiaG9sYTEiLCJleHAiOjE2ODY2MzE0ODF9.pY0XxkzmFzPwfWm8Cm-x5uoQBCkz13eQ0_9B_sVtGCg', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$qeZiNb17OfVFzr71PLaDFUqFxnns1f$be009e0d062a8f1853019c0ddfacf83729a026b3ee001c184789ebf47fd922a4', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2730000000', correo='hola@gmail.com', campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:38434 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.14.63:38436 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:38438 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:38440 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+True
+checo contraseña :)
+INFO:     187.146.14.63:38674 - "PUT /docente/2 HTTP/1.1" 201 Created
+inicio
+True
+id=None matricula='2' correo=None contraseña='hola2'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiaG9sYTIiLCJleHAiOjE2ODY2MzE5MDl9.VVpXw3S9Xxqw4T5siuqtNxwzeW_PsUaUqog5Pj-KxLI', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$zw9gWP1Exwaq5Cj4pU2t6oYDuKOe9n$9b566c087d67c8db73283bc850547aa7cd4d4e372a3e77dde52cfec8b4453b06', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2731000237', correo='hola1@gmail.com', campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiaG9sYTIiLCJleHAiOjE2ODY2MzE5MDl9.VVpXw3S9Xxqw4T5siuqtNxwzeW_PsUaUqog5Pj-KxLI', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$zw9gWP1Exwaq5Cj4pU2t6oYDuKOe9n$9b566c087d67c8db73283bc850547aa7cd4d4e372a3e77dde52cfec8b4453b06', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2731000237', correo='hola1@gmail.com', campus=None, foto_perfil=None)}}
+INFO:     187.146.14.63:38676 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.14.63:38678 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:38682 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:38680 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:38684 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:38686 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.14.63:38688 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:38684 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:38692 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:38684 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:38694 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:38684 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:38684 - "GET /archivo/ HTTP/1.1" 404 Not Found
+obtuvo las clases
+11:00
+11:00
+11:00
+11:00
+11:00
+11:00
+11:00
+11:00
+11:00
+11:00
+11:00
+11:00
+11:00
+11:00
+11:00
+7
+INFO:     187.146.44.176:51410 - "GET /horarioAulas/hora/3 HTTP/1.1" 200 OK
+2023-06-11
+2023-06-11 23:09:02.929829
+INFO:     187.146.44.176:51412 - "POST /bitacora/3/3/7 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:53126 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     187.146.14.63:53688 - "GET /docs HTTP/1.1" 200 OK
+INFO:     187.146.14.63:53688 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     187.146.14.63:53697 - "POST /subir/verificar-credencial-uv HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/uvicorn/protocols/http/h11_impl.py", line 429, in run_asgi
+    self.scope, self.receive, self.send
+  File "/usr/local/lib/python3.7/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/fastapi/applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.7/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/usr/local/lib/python3.7/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.7/site-packages/fastapi/routing.py", line 238, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "/usr/local/lib/python3.7/site-packages/fastapi/routing.py", line 163, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/uvirtualDaniela/Back-UVirtual/routes/archivos.py", line 33, in upload_file_verify_uv_card
+    "message": is_uv_credential(myfile_credential.name),
+  File "/home/uvirtualDaniela/Back-UVirtual/uvirtual/uv_library/cards_detection/uv_credential.py", line 22, in is_uv_credential
+    model = load_model('uv_library/model_cards/keras_model.h5')
+  File "/usr/local/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/usr/local/lib/python3.7/site-packages/keras/saving/legacy/save.py", line 228, in load_model
+    f"No file or directory found at {filepath_str}"
+OSError: No file or directory found at uv_library/model_cards/keras_model.h5
+INFO:     187.146.14.63:53710 - "POST /subir/verificar-credencial-uv HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/uvicorn/protocols/http/h11_impl.py", line 429, in run_asgi
+    self.scope, self.receive, self.send
+  File "/usr/local/lib/python3.7/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/fastapi/applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.7/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/usr/local/lib/python3.7/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.7/site-packages/fastapi/routing.py", line 238, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "/usr/local/lib/python3.7/site-packages/fastapi/routing.py", line 163, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/uvirtualDaniela/Back-UVirtual/routes/archivos.py", line 33, in upload_file_verify_uv_card
+    "message": is_uv_credential(myfile_credential.name),
+  File "/home/uvirtualDaniela/Back-UVirtual/uvirtual/uv_library/cards_detection/uv_credential.py", line 22, in is_uv_credential
+    model = load_model('uv_library/model_cards/keras_model.h5')
+  File "/usr/local/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/usr/local/lib/python3.7/site-packages/keras/saving/legacy/save.py", line 228, in load_model
+    f"No file or directory found at {filepath_str}"
+OSError: No file or directory found at uv_library/model_cards/keras_model.h5
+INFO:     201.175.202.250:51931 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     201.175.202.250:51930 - "POST /subir/verificar-credencial-uv HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/uvicorn/protocols/http/h11_impl.py", line 429, in run_asgi
+    self.scope, self.receive, self.send
+  File "/usr/local/lib/python3.7/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/fastapi/applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.7/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/usr/local/lib/python3.7/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.7/site-packages/fastapi/routing.py", line 238, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "/usr/local/lib/python3.7/site-packages/fastapi/routing.py", line 163, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/uvirtualDaniela/Back-UVirtual/routes/archivos.py", line 33, in upload_file_verify_uv_card
+    "message": is_uv_credential(myfile_credential.name),
+  File "/home/uvirtualDaniela/Back-UVirtual/uvirtual/uv_library/cards_detection/uv_credential.py", line 22, in is_uv_credential
+    model = load_model('uv_library/model_cards/keras_model.h5')
+  File "/usr/local/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/usr/local/lib/python3.7/site-packages/keras/saving/legacy/save.py", line 228, in load_model
+    f"No file or directory found at {filepath_str}"
+OSError: No file or directory found at uv_library/model_cards/keras_model.h5
+INFO:     187.146.14.63:46060 - "POST /subir/verificar-credencial-uv HTTP/1.1" 422 Unprocessable Entity
+INFO:     187.146.14.63:46062 - "POST /subir/verificar-credencial-uv HTTP/1.1" 422 Unprocessable Entity
+INFO:     201.175.202.250:27056 - "GET /docs HTTP/1.1" 200 OK
+INFO:     201.175.202.250:27056 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     201.175.202.250:32090 - "POST /subir/verificar-credencial-uv HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/uvicorn/protocols/http/h11_impl.py", line 429, in run_asgi
+    self.scope, self.receive, self.send
+  File "/usr/local/lib/python3.7/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/fastapi/applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/usr/local/lib/python3.7/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.7/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/usr/local/lib/python3.7/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.7/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.7/site-packages/fastapi/routing.py", line 238, in app
+    dependant=dependant, values=values, is_coroutine=is_coroutine
+  File "/usr/local/lib/python3.7/site-packages/fastapi/routing.py", line 163, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/uvirtualDaniela/Back-UVirtual/routes/archivos.py", line 33, in upload_file_verify_uv_card
+    "message": is_uv_credential(myfile_credential.name),
+  File "/home/uvirtualDaniela/Back-UVirtual/uvirtual/uv_library/cards_detection/uv_credential.py", line 22, in is_uv_credential
+    model = load_model('uvirtual/uv_library/model_cards/keras_model.h5')
+  File "/usr/local/lib/python3.7/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/usr/local/lib/python3.7/site-packages/keras/saving/legacy/save.py", line 228, in load_model
+    f"No file or directory found at {filepath_str}"
+OSError: No file or directory found at uv_library/model_cards/keras_model.h5
+INFO:     187.146.14.63:46102 - "POST /subir/verificar-credencial-uv HTTP/1.1" 422 Unprocessable Entity
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5960]
+ERROR:sqlalchemy.pool.impl.QueuePool:Exception during reset or similar
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 992, in _finalize_fairy
+    asyncio_safe=can_manipulate_connection,
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 1437, in _reset
+    pool._dialect.do_rollback(self)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 693, in do_rollback
+    dbapi_connection.rollback()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 482, in rollback
+    self._read_ok_packet()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 442, in _read_ok_packet
+    pkt = self._read_packet()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 707, in _read_packet
+    "Lost connection to MySQL server during query",
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+2023-06-12 09:05:11.924916: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-06-12 09:05:12.080459: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 09:05:12.080500: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-06-12 09:05:12.843070: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 09:05:12.843172: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 09:05:12.843204: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+INFO:     Started server process [9967]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:3003 (Press CTRL+C to quit)
+2023-06-12 09:05:20.740706: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 09:05:20.740750: W tensorflow/compiler/xla/stream_executor/cuda/cuda_driver.cc:265] failed call to cuInit: UNKNOWN ERROR (303)
+2023-06-12 09:05:20.740774: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (serverUvirtual): /proc/driver/nvidia/version does not exist
+2023-06-12 09:05:20.741048: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 840ms/step
+INFO:     187.146.14.63:46660 - "POST /subir/verificar-credencial-uv HTTP/1.1" 200 OK
+INFO:     187.146.14.63:46682 - "POST /subir/verificar-credencial-uv HTTP/1.1" 422 Unprocessable Entity
+INFO:     187.146.14.63:46684 - "POST /subir/verificar-credencial-uv HTTP/1.1" 422 Unprocessable Entity
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 821ms/step
+INFO:     187.146.14.63:46686 - "POST /subir/verificar-credencial-uv HTTP/1.1" 200 OK
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 784ms/step
+INFO:     187.146.14.63:46724 - "POST /subir/verificar-credencial-uv HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     45.79.163.53:56870 - "GET / HTTP/1.1" 404 Not Found
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 922ms/step
+INFO:     187.146.14.63:47168 - "POST /subir/verificar-credencial-uv HTTP/1.1" 200 OK
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+WARNING:tensorflow:5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7fc3b90b0d08> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 702ms/step
+INFO:     187.146.14.63:47206 - "POST /subir/verificar-credencial-uv HTTP/1.1" 200 OK
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+WARNING:tensorflow:6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7fc3b85f29d8> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 772ms/step
+INFO:     187.146.14.63:47208 - "POST /subir/verificar-credencial-uv HTTP/1.1" 200 OK
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 734ms/step
+INFO:     187.146.14.63:47262 - "POST /subir/verificar-credencial-uv HTTP/1.1" 200 OK
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 715ms/step
+INFO:     187.146.14.63:47270 - "POST /subir/verificar-credencial-uv HTTP/1.1" 200 OK
+INFO:     187.146.14.63:47272 - "GET /horarioEstudiante/horarioEstudiante/null HTTP/1.1" 422 Unprocessable Entity
+INFO:     187.146.14.63:47274 - "GET /archivo/null HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:47274 - "GET /archivo/null HTTP/1.1" 404 Not Found
+INFO:     187.146.14.63:47274 - "GET /archivo/null HTTP/1.1" 404 Not Found
+inicio
+True
+id=None matricula='zs21004479' correo=None contraseña='Takitol1986'
+Student
+id=None matricula='zs21004479' correo=None contraseña='Takitol1986'
+(3, 'zs21004479', 'pbkdf2:sha256:30$Vd5J6VOhAtvlk3OxL9qA1p8VdA4dNM$0a182a9b7b4a011c1cf2f115d5ecb2246dc3bc33898c0ea0eef774cb99669b95', 'SOLANO VICTORIA JESUS GERARDO', 'zs21004479@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '271 2240554', 'uploads/profile_picture/0666559d-955c-4e5f-831b-721b81bdea8b.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDQ3OSIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiVGFraXRvbDE5ODYiLCJleHAiOjE2ODY2NTA1ODZ9.txZRYDWeQH1kTL_k2tUUTgYaxZrvsMcJyD33R8QCObI', 'user': Estudiante(id=3, matricula='zs21004479', contraseña='pbkdf2:sha256:30$Vd5J6VOhAtvlk3OxL9qA1p8VdA4dNM$0a182a9b7b4a011c1cf2f115d5ecb2246dc3bc33898c0ea0eef774cb99669b95', nombre='SOLANO VICTORIA JESUS GERARDO', correo='zs21004479@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='271 2240554', foto_perfil='uploads/profile_picture/0666559d-955c-4e5f-831b-721b81bdea8b.png')}}
+INFO:     187.146.124.155:38282 - "POST /login HTTP/1.1" 200 OK
+INFO:     187.146.124.155:11370 - "GET /horarioEstudiante/horarioEstudiante/3 HTTP/1.1" 204 No Content
+INFO:     187.146.124.155:44734 - "GET /archivo/profile_picture/0666559d-955c-4e5f-831b-721b81bdea8b.png HTTP/1.1" 200 OK
+INFO:     187.146.124.155:44750 - "GET /estudiante/estudiante/3 HTTP/1.1" 200 OK
+INFO:     187.146.124.155:44764 - "GET /estudiante/estudiante/3 HTTP/1.1" 200 OK
+INFO:     187.146.124.155:44902 - "GET /horarioEstudiante/horarioEstudiante/3 HTTP/1.1" 204 No Content
+INFO:     187.146.124.155:44912 - "GET /estudiante/estudiante/3 HTTP/1.1" 200 OK
+inicio
+True
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+<starlette.responses.Response object at 0x7fc3b8ed43c8>
+{'user': 'Docente', 'data': <starlette.responses.Response object at 0x7fc3b8ed43c8>}
+INFO:     187.146.124.155:41002 - "POST /login HTTP/1.1" 200 OK
+inicio
+True
+id=None matricula='1' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+<starlette.responses.Response object at 0x7fc3b8ed4ba8>
+{'user': 'Docente', 'data': <starlette.responses.Response object at 0x7fc3b8ed4ba8>}
+INFO:     187.146.124.155:42084 - "POST /login HTTP/1.1" 200 OK
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 738ms/step
+INFO:     187.146.14.63:47332 - "POST /subir/verificar-credencial-uv HTTP/1.1" 200 OK
+INFO:     187.146.14.63:47334 - "GET /horarioEstudiante/horarioEstudiante/null HTTP/1.1" 422 Unprocessable Entity
+inicio
+True
+id=None matricula='2' correo=None contraseña='password'
+Docente
+hello
+buscara
+encontro
+<starlette.responses.Response object at 0x7fc3b8ed44a8>
+{'user': 'Docente', 'data': <starlette.responses.Response object at 0x7fc3b8ed44a8>}
+INFO:     187.146.124.155:38734 - "POST /login HTTP/1.1" 200 OK
+inicio
+True
+id=None matricula='2' correo=None contraseña='hola1'
+Docente
+hello
+buscara
+encontro
+<starlette.responses.Response object at 0x7fc3b8d929b0>
+{'user': 'Docente', 'data': <starlette.responses.Response object at 0x7fc3b8d929b0>}
+INFO:     187.146.124.155:38746 - "POST /login HTTP/1.1" 200 OK
+inicio
+True
+id=None matricula='2' correo=None contraseña='hola2'
+Docente
+hello
+buscara
+encontro
+{'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiaG9sYTIiLCJleHAiOjE2ODY2NTEyODV9.DZKrW5Ajz5JmcwrfQVpFMOQn2LtTEDU-0xl-M5xBuxU', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$zw9gWP1Exwaq5Cj4pU2t6oYDuKOe9n$9b566c087d67c8db73283bc850547aa7cd4d4e372a3e77dde52cfec8b4453b06', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2731000237', correo='hola1@gmail.com', campus=None, foto_perfil=None)}
+{'user': 'Docente', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJtYXRyaWN1bGEiOm51bGwsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiaG9sYTIiLCJleHAiOjE2ODY2NTEyODV9.DZKrW5Ajz5JmcwrfQVpFMOQn2LtTEDU-0xl-M5xBuxU', 'user': Docente(id=2, contraseña='pbkdf2:sha256:30$zw9gWP1Exwaq5Cj4pU2t6oYDuKOe9n$9b566c087d67c8db73283bc850547aa7cd4d4e372a3e77dde52cfec8b4453b06', nombre='GARCIA MUÑOZ VIRGINIA', telefono='2731000237', correo='hola1@gmail.com', campus=None, foto_perfil=None)}}
+INFO:     187.146.124.155:38760 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.124.155:38776 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+INFO:     187.146.124.155:45870 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.124.155:45878 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.124.155:47800 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.124.155:47794 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.124.155:47794 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.124.155:47824 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+[Clase(id=2, nrc='53269', nombre='INGLES III BASICO **', academico='GARCIA MUÑOZ VIRGINIA', facultad='Fac Estadistica E Informatica', campus='CORDOBA', edificio='B-CIC', aula='6', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado='09:00-13:59')]
+INFO:     187.146.124.155:47812 - "GET /horarioDocente/horarioDocente/2 HTTP/1.1" 200 OK
+INFO:     187.146.124.155:48104 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.124.155:48118 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.124.155:48104 - "GET /archivo/ HTTP/1.1" 404 Not Found
+INFO:     187.146.124.155:48134 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 762ms/step
+INFO:     187.146.14.63:47464 - "POST /subir/verificar-credencial-uv HTTP/1.1" 200 OK
+INFO:     187.146.14.63:47466 - "GET /horarioEstudiante/horarioEstudiante/null HTTP/1.1" 422 Unprocessable Entity
+inicio
+True
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjY1NDE0N30.A4b-X3W6TamMVBmXkWi7Nzv-Q3LoDN_LUiCWOwpPbN0', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:48050 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=10, nrc='81371', nombre='INGLES I', academico='TZOPITL CABRERA ELSA', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='USBI-J', aula='CAA-USBI', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado=None), Clase(id=11, nrc='94854', nombre='PRINCIPIOS DE DISEÑO DE SOFTWARE', academico='GONZALEZ MARTINEZ MARIA DOLORES', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes='15:00-16:59', martes=None, miercoles='15:00-16:59', jueves=None, viernes='15:00-16:59', sabado=None), Clase(id=12, nrc='REDES', nombre='REDES', academico='RUIZ JURADO ALDO CARLOS', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLAN', edificio='J-EDI1', aula='2', lunes=None, martes=None, miercoles='13:00-14:59', jueves='15:00-16:59', viernes='13:00-14:59', sabado=None), Clase(id=13, nrc='PROCESOS PARA LA INGENIERIA DE SOFTWARE', nombre='PROCESOS PARA LA INGENIERIA DE SOFTWARE', academico='RODRIGUEZ PARADA ADOLFO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLAN', edificio='J-EDI1', aula='2', lunes='13:00-14:59', martes='13:00-14:59', miercoles=None, jueves='13:00-14:59', viernes=None, sabado=None), Clase(id=14, nrc='94857', nombre='PARADIGMAS DE PROGRAMACION', academico='CENTENO TELLEZ ADOLFO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes=None, martes='15:00-16:59', miercoles=None, jueves='17:00-18:59', viernes='17:00-18:59', sabado=None), Clase(id=15, nrc='94858', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes='17:00-18:59', martes='17:00-18:59', miercoles='17:00-18:59', jueves=None, viernes=None, sabado=None)]
+INFO:     187.146.14.63:48052 - "GET /horarioEstudiante/horarioEstudiante/5 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:48058 - "GET /archivo/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png HTTP/1.1" 200 OK
+INFO:     187.146.14.63:48060 - "GET /estudiante/estudiante/5 HTTP/1.1" 200 OK
+INFO:     66.175.213.4:51838 - "GET / HTTP/1.1" 404 Not Found
