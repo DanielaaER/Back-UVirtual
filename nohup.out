@@ -1392,3 +1392,64 @@ INFO:     Shutting down
 INFO:     Waiting for application shutdown.
 INFO:     Application shutdown complete.
 INFO:     Finished server process [5314]
+2023-06-12 03:10:54.924169: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-06-12 03:10:55.091856: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 03:10:55.091892: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-06-12 03:10:55.884994: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 03:10:55.885075: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib/python3.7/site-packages/cv2/../../lib64:
+2023-06-12 03:10:55.885088: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+INFO:     Started server process [5757]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:3003 (Press CTRL+C to quit)
+inicio
+True
+id=None matricula='2' correo=None contraseña='password'
+..............................
+<starlette.responses.Response object at 0x7f530f31dd68>
+INFO:     187.146.14.63:37418 - "POST /login HTTP/1.1" 204 No Content
+inicio
+True
+id=None matricula='2' correo=None contraseña='password'
+..............................
+<starlette.responses.Response object at 0x7f530f31dd30>
+INFO:     187.146.14.63:37422 - "POST /login HTTP/1.1" 204 No Content
+inicio
+True
+id=None matricula='2' correo=None contraseña='contraseña'
+..............................
+<starlette.responses.Response object at 0x7f530f31dbe0>
+INFO:     187.146.14.63:37424 - "POST /login HTTP/1.1" 204 No Content
+inicio
+True
+id=None matricula='2' correo=None contraseña='contraseña'
+..............................
+<starlette.responses.Response object at 0x7f530f31ddd8>
+INFO:     187.146.14.63:37430 - "POST /login HTTP/1.1" 204 No Content
+inicio
+True
+id=None matricula='2' correo=None contraseña='password'
+..............................
+<starlette.responses.Response object at 0x7f530f31de48>
+INFO:     187.146.14.63:37432 - "POST /login HTTP/1.1" 204 No Content
+inicio
+True
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+Student
+id=None matricula='zs21004520' correo=None contraseña='GAAO030901'
+(5, 'zs21004520', 'pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', 'GALINDO ALDUCIN OMAR JAZAEL', 'zs21004520@estudiantes.uv.mx', 'Ixtaczoquitlán', 4, '273 1000238', 'uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')
+{'user': 'Student', 'data': {'status': 200, 'message': 'Access success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwibWF0cmljdWxhIjoienMyMTAwNDUyMCIsImNvcnJlbyI6bnVsbCwiY29udHJhc2VcdTAwZjFhIjoiR0FBTzAzMDkwMSIsImV4cCI6MTY4NjYyNzg4MH0.nwE4weLxjgo67ww7agSKVfYsJLGhRpUe4NLurgPPEpQ', 'user': Estudiante(id=5, matricula='zs21004520', contraseña='pbkdf2:sha256:30$Rv0rZyMN589q4p7TOzwZLRU85y5LsN$ec9344578b8b62fcc4ac85b9279d297b65bca944e7713c146bab7c561a41cda7', nombre='GALINDO ALDUCIN OMAR JAZAEL', correo='zs21004520@estudiantes.uv.mx', campus='Ixtaczoquitlán', semestre=4, telefono='273 1000238', foto_perfil='uploads/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png')}}
+INFO:     187.146.14.63:37434 - "POST /login HTTP/1.1" 200 OK
+[Clase(id=10, nrc='81371', nombre='INGLES I', academico='TZOPITL CABRERA ELSA', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='USBI-J', aula='CAA-USBI', lunes=None, martes=None, miercoles=None, jueves=None, viernes=None, sabado=None), Clase(id=11, nrc='94854', nombre='PRINCIPIOS DE DISEÑO DE SOFTWARE', academico='GONZALEZ MARTINEZ MARIA DOLORES', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes='15:00-16:59', martes=None, miercoles='15:00-16:59', jueves=None, viernes='15:00-16:59', sabado=None), Clase(id=12, nrc='REDES', nombre='REDES', academico='RUIZ JURADO ALDO CARLOS', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLAN', edificio='J-EDI1', aula='2', lunes=None, martes=None, miercoles='13:00-14:59', jueves='15:00-16:59', viernes='13:00-14:59', sabado=None), Clase(id=13, nrc='PROCESOS PARA LA INGENIERIA DE SOFTWARE', nombre='PROCESOS PARA LA INGENIERIA DE SOFTWARE', academico='RODRIGUEZ PARADA ADOLFO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLAN', edificio='J-EDI1', aula='2', lunes='13:00-14:59', martes='13:00-14:59', miercoles=None, jueves='13:00-14:59', viernes=None, sabado=None), Clase(id=14, nrc='94857', nombre='PARADIGMAS DE PROGRAMACION', academico='CENTENO TELLEZ ADOLFO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes=None, martes='15:00-16:59', miercoles=None, jueves='17:00-18:59', viernes='17:00-18:59', sabado=None), Clase(id=15, nrc='94858', nombre='PRINCIPIOS DE CONSTRUCCION DE SOFTWARE', academico='GONZALEZ DIAZ JORGE ERNESTO', facultad='Fac Estadistica E Informatica', campus='IXTACZOQUITLÁN', edificio='J-EDI1', aula='2', lunes='17:00-18:59', martes='17:00-18:59', miercoles='17:00-18:59', jueves=None, viernes=None, sabado=None)]
+INFO:     187.146.14.63:37436 - "GET /horarioEstudiante/horarioEstudiante/5 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37438 - "GET /archivo/profile_picture/2ebe105e-2e1e-40e4-9674-0af8e4423639.png HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37440 - "GET /estudiante/estudiante/5 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37442 - "GET /estudiante/estudiante/5 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:37460 - "GET /estudiante/estudiante/5 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:64610 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     187.146.14.63:64610 - "GET /docente/docente/2 HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5757]

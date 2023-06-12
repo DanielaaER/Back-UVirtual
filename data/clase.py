@@ -28,6 +28,8 @@ from models.horarioAula import horarioAulas
 from schemas.horarioAula import HorarioAula
 
 
+from validation.estudiante import validar_loginEstudiante
+
 def get_clasees():
     
     with engine.connect() as conn:
@@ -106,169 +108,174 @@ def crear_clasees(data_clase):
 
 def ingresar_clasees(estudiantes_auth):
     try:
-        with engine.connect() as conn:
-            if (estudiantes_auth.correo != None):
-                result = conn.execute(estudiantes.select().where(
-                    estudiantes.c.correo == estudiantes_auth.correo)).first()
-            if (estudiantes_auth.matricula != None):
-                result = conn.execute(estudiantes.select().where(
-                    estudiantes.c.matricula == estudiantes_auth.matricula)).first()
-            print(result)
-            if result != None:
+    
+        if validar_loginEstudiante(estudiantes_auth):
+            with engine.connect() as conn:
+                if (estudiantes_auth.correo != None):
+                    result = conn.execute(estudiantes.select().where(
+                        estudiantes.c.correo == estudiantes_auth.correo)).first()
+                if (estudiantes_auth.matricula != None):
+                    result = conn.execute(estudiantes.select().where(
+                        estudiantes.c.matricula == estudiantes_auth.matricula)).first()
+                print(result)
+                if result != None:
 
-                check_passw = check_password_hash(result[2], estudiantes_auth.contraseña)
-                if check_passw:
-                    class_by_miuv = get_class_uv(user=estudiantes_auth.matricula, password=estudiantes_auth.contraseña)
-                    class_dict = json.loads(class_by_miuv)
-                    dic = class_dict['clases']
-                    for clase, detalles in dic.items():
-                        print("edifciio")
-                        edif = conn.execute(edificios.select().where(
-                            edificios.c.nombre == detalles["general"]["edificio"])).first()
-                        
-                        if edif is None:
-                            print("creara")
-                            new_edificio=Edificio
-                            new_edificio.nombre = detalles["general"]["edificio"]
-                            print(new_edificio.nombre)
-                            if (detalles["detalles"].get("escuela")) is not None:
-                                escuela = detalles["detalles"]["escuela"]
-                            else:
-                                escuela = "Fac Estadistica E Informatica"
-                            new_edificio.facultad=escuela
-                            print("###########3")
-                            print(new_edificio.facultad)
-
-                            if (detalles["detalles"].get("campus")) is not None:
-                                print("hi")
-                                new_edificio.campus = str(
-                                    detalles["detalles"]["campus"])
-                                print("!")
-                            else:
-                                new_edificio.campus="IXTACZOQUITLAN"
-                                print("#")
+                    check_passw = check_password_hash(result[2], estudiantes_auth.contraseña)
+                    if check_passw:
+                        class_by_miuv = get_class_uv(user=estudiantes_auth.matricula, password=estudiantes_auth.contraseña)
+                        class_dict = json.loads(class_by_miuv)
+                        dic = class_dict['clases']
+                        for clase, detalles in dic.items():
+                            print("edifciio")
+                            edif = conn.execute(edificios.select().where(
+                                edificios.c.nombre == detalles["general"]["edificio"])).first()
                             
-                            print(new_edificio.campus)
+                            if edif is None:
+                                print("creara")
+                                new_edificio=Edificio
+                                new_edificio.nombre = detalles["general"]["edificio"]
+                                print(new_edificio.nombre)
+                                if (detalles["detalles"].get("escuela")) is not None:
+                                    escuela = detalles["detalles"]["escuela"]
+                                else:
+                                    escuela = "Fac Estadistica E Informatica"
+                                new_edificio.facultad=escuela
+                                print("###########3")
+                                print(new_edificio.facultad)
 
-                            print(new_edificio)
-                            conn.execute(edificios.insert().values(
-                                nombre=new_edificio.nombre,
-                                facultad=new_edificio.facultad,
-                                campus=new_edificio.campus
-                            ))
-                            conn.commit()
-                            edif = conn.execute(edificios.select().where(edificios.c.nombre == detalles["general"]["edificio"])).first()
-                        print("__EDIFICIO")
-                        print(edif)
-                        print(edif.id)
-                        n_aula = detalles["general"]["aula"]
-                        sql = text(f"select * from aulas where aulas.nombre = '{n_aula}' and aulas.id_edificio = '{edif.id}'")
-                        #res= conn.execute(aulas.select().where(aulas.c.nombre ==  and aulas.c.id_edificio == edif.id)).first()
-                        res = conn.execute(sql).first()
-                        print("_______________")
-                        print(res)
-                        print("________________")
-                        if res is None:
-                            print("aulas")
-                            conn.execute(aulas.insert().values(
-                                nombre=detalles["general"]["aula"],
-                                id_edificio=edif.id
-                                ))
-
-                        conn.commit()
-
-                        print("clases")
-                        nrc = clase
-
-                        if (detalles["detalles"].get("nrc")) is not None:
-                            nrc = detalles["detalles"]["nrc"]
-
-                        result = conn.execute(clases.select().where(
-                            clases.c.nrc == nrc)).first()
-                        if (result == None):
-                            new_clase = Clase
-
-                            new_clase.nrc = nrc
-                            new_clase.nombre = clase
-                            new_clase.academico = detalles["general"]["acad"]
-
-                            if (detalles["detalles"].get("escuela")) is not None:
-                                escuela = detalles["detalles"]["escuela"]
-                            else:
-                                escuela = "Fac Estadistica E Informatica"
-
-                            new_clase.facultad = escuela
-                            
-                            if (detalles["detalles"].get("campus")) is not None:
-                                new_clase.campus = str(
-                                    detalles["detalles"]["campus"])
-                            else:
-                                new_clase.campus="IXTACZOQUITLAN"
-
-                            new_clase.edificio = str(
-                                detalles["general"]["edificio"])
-
-                            new_clase.aula = str(detalles["general"]["aula"])
-                            dias_semana = [
-                                'lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado']
-                            dias_dict = {}
-                            for dia in dias_semana:
-                                if dia in detalles["general"]:
-                                    dia_str = str(detalles["general"][dia])
-                                    dias_dict[dia] = dia_str
-
-                            result_create = conn.execute(clases.insert().values(
-                                nrc=new_clase.nrc,
-                                nombre=new_clase.nombre,
-                                academico=new_clase.academico,
-                                facultad=new_clase.facultad,
-                                campus=new_clase.campus,
-                                edificio=new_clase.edificio,
-                                aula=new_clase.aula,
-                                **dias_dict
-                            ))
-                            # result_create = conn.execute(clases.insert().values(new_clase))
-                            conn.commit()
-                            logging.info(
-                                f"Clase {new_clase.nombre} creada correctamente")
-
-                        print("guardar horario :)")
-                        result = conn.execute(estudiantes.select().where(
-                            estudiantes.c.matricula == estudiantes_auth.matricula)).first()
-                        id_estudiante = result.id
-                        result = conn.execute(clases.select().where(
-                            clases.c.nrc == nrc)).first()
-                        id_clase = result.id
-                        result = conn.execute(horarioEstudiantes.insert().values(
-                            id_estudiante=id_estudiante,
-                            id_clase=id_clase
-                        ))
-                        print("guardar aula :)")
-                        conn.commit()
+                                if (detalles["detalles"].get("campus")) is not None:
+                                    print("hi")
+                                    new_edificio.campus = str(
+                                        detalles["detalles"]["campus"])
+                                    print("!")
+                                else:
+                                    new_edificio.campus="IXTACZOQUITLAN"
+                                    print("#")
                                 
-                        n_aula = detalles["general"]["aula"]
-                        sql = text(f"select * from aulas where aulas.nombre = '{n_aula}' and aulas.id_edificio = '{edif.id}'")
-                        #res= conn.execute(aulas.select().where(aulas.c.nombre ==  and aulas.c.id_edificio == edif.id)).first()
-                        result = conn.execute(sql).first()
-                        print(result.id)
-                        print(id_clase)
-                        result = conn.execute(horarioAulas.insert().values(
-                            id_aula=result.id,
-                            id_clase= id_clase))
-                        conn.commit()
+                                print(new_edificio.campus)
 
-                    return {
-                        "status": 200,
-                        "message": "Access success",
-                        "token": write_token(estudiantes_auth.dict()),
-                        # "user" : get_estudiante_by_id_estudiante(result[0])
-                    }
+                                print(new_edificio)
+                                conn.execute(edificios.insert().values(
+                                    nombre=new_edificio.nombre,
+                                    facultad=new_edificio.facultad,
+                                    campus=new_edificio.campus
+                                ))
+                                conn.commit()
+                                edif = conn.execute(edificios.select().where(edificios.c.nombre == detalles["general"]["edificio"])).first()
+                            print("__EDIFICIO")
+                            print(edif)
+                            print(edif.id)
+                            n_aula = detalles["general"]["aula"]
+                            sql = text(f"select * from aulas where aulas.nombre = '{n_aula}' and aulas.id_edificio = '{edif.id}'")
+                            #res= conn.execute(aulas.select().where(aulas.c.nombre ==  and aulas.c.id_edificio == edif.id)).first()
+                            res = conn.execute(sql).first()
+                            print("_______________")
+                            print(res)
+                            print("________________")
+                            if res is None:
+                                print("aulas")
+                                conn.execute(aulas.insert().values(
+                                    nombre=detalles["general"]["aula"],
+                                    id_edificio=edif.id
+                                    ))
+
+                            conn.commit()
+
+                            print("clases")
+                            nrc = clase
+
+                            if (detalles["detalles"].get("nrc")) is not None:
+                                nrc = detalles["detalles"]["nrc"]
+
+                            result = conn.execute(clases.select().where(
+                                clases.c.nrc == nrc)).first()
+                            if (result == None):
+                                new_clase = Clase
+
+                                new_clase.nrc = nrc
+                                new_clase.nombre = clase
+                                new_clase.academico = detalles["general"]["acad"]
+
+                                if (detalles["detalles"].get("escuela")) is not None:
+                                    escuela = detalles["detalles"]["escuela"]
+                                else:
+                                    escuela = "Fac Estadistica E Informatica"
+
+                                new_clase.facultad = escuela
+                                
+                                if (detalles["detalles"].get("campus")) is not None:
+                                    new_clase.campus = str(
+                                        detalles["detalles"]["campus"])
+                                else:
+                                    new_clase.campus="IXTACZOQUITLAN"
+
+                                new_clase.edificio = str(
+                                    detalles["general"]["edificio"])
+
+                                new_clase.aula = str(detalles["general"]["aula"])
+                                dias_semana = [
+                                    'lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado']
+                                dias_dict = {}
+                                for dia in dias_semana:
+                                    if dia in detalles["general"]:
+                                        dia_str = str(detalles["general"][dia])
+                                        dias_dict[dia] = dia_str
+
+                                result_create = conn.execute(clases.insert().values(
+                                    nrc=new_clase.nrc,
+                                    nombre=new_clase.nombre,
+                                    academico=new_clase.academico,
+                                    facultad=new_clase.facultad,
+                                    campus=new_clase.campus,
+                                    edificio=new_clase.edificio,
+                                    aula=new_clase.aula,
+                                    **dias_dict
+                                ))
+                                # result_create = conn.execute(clases.insert().values(new_clase))
+                                conn.commit()
+                                logging.info(
+                                    f"Clase {new_clase.nombre} creada correctamente")
+
+                            print("guardar horario :)")
+                            result = conn.execute(estudiantes.select().where(
+                                estudiantes.c.matricula == estudiantes_auth.matricula)).first()
+                            id_estudiante = result.id
+                            result = conn.execute(clases.select().where(
+                                clases.c.nrc == nrc)).first()
+                            id_clase = result.id
+                            result = conn.execute(horarioEstudiantes.insert().values(
+                                id_estudiante=id_estudiante,
+                                id_clase=id_clase
+                            ))
+                            print("guardar aula :)")
+                            conn.commit()
+                                    
+                            n_aula = detalles["general"]["aula"]
+                            sql = text(f"select * from aulas where aulas.nombre = '{n_aula}' and aulas.id_edificio = '{edif.id}'")
+                            #res= conn.execute(aulas.select().where(aulas.c.nombre ==  and aulas.c.id_edificio == edif.id)).first()
+                            result = conn.execute(sql).first()
+                            print(result.id)
+                            print(id_clase)
+                            result = conn.execute(horarioAulas.insert().values(
+                                id_aula=result.id,
+                                id_clase= id_clase))
+                            conn.commit()
+
+                        return {
+                            "status": 200,
+                            "message": "Access success",
+                            "token": write_token(estudiantes_auth.dict()),
+                            # "user" : get_estudiante_by_id_estudiante(result[0])
+                        }
+                    else:
+                        return Response(status_code=HTTP_401_UNAUTHORIZED)
                 else:
-                    return Response(status_code=HTTP_401_UNAUTHORIZED)
-            else:
-                return Response(status_code=HTTP_204_NO_CONTENT)
+                    return Response(status_code=HTTP_204_NO_CONTENT)
 
+            
+        else:
+            return Response(status_code=400)
     except Exception as exception_error:
-        logging.error(
-            f"Error al crear la clase ||| {exception_error}")
-        return Response(status_code=SERVER_ERROR)
+                logging.error(
+                    f"Error al crear la clase ||| {exception_error}")
+                return Response(status_code=SERVER_ERROR)

@@ -23,7 +23,7 @@ from schemas.estudiante import Estudiante, EstudianteAuth
 from models.horarioDocente import horarioDocentes
 from schemas.horarioDocente import HorarioDocente
 
-
+from validation.docente import validar_Docente, validar_loginDocente
 def get_docentee():
     with engine.connect() as conn:
         result = conn.execute(docentes.select()).fetchall()
@@ -168,58 +168,65 @@ def ingresar_docentee(estudiantes_auth):
 
 
 def login_docentee(docentes_auth):
-    with engine.connect() as conn:
-        if (docentes_auth.correo != None):
-            result = conn.execute(docentes.select().where(docentes.c.correo == docentes_auth.correo)).first()
-        if (docentes_auth.id != None):
-            result = conn.execute(docentes.select().where(docentes.c.id == docentes_auth.id)).first()
-        
-        if result != None:
-            check_passw = check_password_hash(result[1], docentes_auth.contraseña)
-            if check_passw:
-                
-                return {
-                    "status": 200,
-                    "message": "Access success",
-                    "token": write_token(docentes_auth.dict()),
-                    "user": get_id_docentee(result[0])
-                }
-            else:
-                return Response(status_code=HTTP_401_UNAUTHORIZED)
+    if validar_loginDocente:
+        with engine.connect() as conn:
+            if (docentes_auth.correo != None):
+                result = conn.execute(docentes.select().where(docentes.c.correo == docentes_auth.correo)).first()
+            if (docentes_auth.id != None):
+                result = conn.execute(docentes.select().where(docentes.c.id == docentes_auth.id)).first()
+            
+            if result != None:
+                check_passw = check_password_hash(result[1], docentes_auth.contraseña)
+                if check_passw:
+                    
+                    return {
+                        "status": 200,
+                        "message": "Access success",
+                        "token": write_token(docentes_auth.dict()),
+                        "user": get_id_docentee(result[0])
+                    }
+                else:
+                    return Response(status_code=HTTP_401_UNAUTHORIZED)
 
-        else:
-            return Response(status_code=HTTP_204_NO_CONTENT)
+            else:
+                return Response(status_code=HTTP_204_NO_CONTENT)
+    else:
+        return Response(status_code=400)
 
 
 
 def actualizar_docentee(data_update):
-    with engine.connect() as conn:
-        result = conn.execute(docentes.select().where(
-            docentes.c.id == data_update.id)).first()
-        if result:
-            check_passw = check_password_hash(result[1], data_update.contraseña)
-            print(check_passw)
-            print ("checo contraseña :)")
-            if check_passw:
-                encryp_passw = generate_password_hash(data_update.new_password, "pbkdf2:sha256:30", 30)
-                
-                result = conn.execute(docentes.update().values(
-                    contraseña=encryp_passw,
-                    telefono=data_update.telefono,
-                    correo=data_update.correo,
-                    campus=data_update.campus,
-                    foto_perfil=data_update.foto_perfil
-                ).where(docentes.c.id == data_update.id))
-
-                conn.commit()
+    if validar_Docente(data_update):
+        with engine.connect() as conn:
                 result = conn.execute(docentes.select().where(
                     docentes.c.id == data_update.id)).first()
+                if result:
+                    check_passw = check_password_hash(result[1], data_update.contraseña)
+                    print(check_passw)
+                    print ("checo contraseña :)")
+                    if check_passw:
+                        encryp_passw = generate_password_hash(data_update.new_password, "pbkdf2:sha256:30", 30)
+                        
+                        result = conn.execute(docentes.update().values(
+                            contraseña=encryp_passw,
+                            telefono=data_update.telefono,
+                            correo=data_update.correo,
+                            campus=data_update.campus,
+                            foto_perfil=data_update.foto_perfil
+                        ).where(docentes.c.id == data_update.id))
 
-                logging.info(
-                    f"Docente con el ID: {data_update.id} actualizado correctamente")
+                        conn.commit()
+                        result = conn.execute(docentes.select().where(
+                            docentes.c.id == data_update.id)).first()
 
-                return Response(status_code=HTTP_201_CREATED)
-            else:
-                return Response(status_code=404)
-        else:
-            return Response(status_code=HTTP_204_NO_CONTENT)    
+                        logging.info(
+                            f"Docente con el ID: {data_update.id} actualizado correctamente")
+
+                        return Response(status_code=HTTP_201_CREATED)
+                    else:
+                        return Response(status_code=404)
+                else:
+                    return Response(status_code=HTTP_204_NO_CONTENT)    
+    
+    else:
+        return Response(status_code=400)    
