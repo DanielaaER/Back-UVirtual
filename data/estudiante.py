@@ -13,6 +13,8 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import json
 
 
+
+from validation.estudiante import validar_loginEstudiante, validar_Estudiante
 def get_estudiantees():
     with engine.connect() as conn:
         result = conn.execute(estudiantes.select()).fetchall()
@@ -64,90 +66,96 @@ def list_estudiantee(result):
 
 def create_estudiantee(data_estudiante):
     with engine.connect() as conn:
-        result = conn.execute(estudiantes.select().where(
-            estudiantes.c.correo == data_estudiante.correo or estudiantes.c.matricula == data_estudiante.matricula)).first()
+        if validar_Estudiante(data_estudiante):
+            result = conn.execute(estudiantes.select().where(
+                estudiantes.c.correo == data_estudiante.correo or estudiantes.c.matricula == data_estudiante.matricula)).first()
 
-        if result != None:
-            return Response(status_code=HTTP_401_UNAUTHORIZED)
+            if result != None:
+                return Response(status_code=HTTP_401_UNAUTHORIZED)
 
-        new_estudiante = data_estudiante.dict()
-        conn.execute(estudiantes.insert().values(new_estudiante))
-        conn.commit()
-        return {
-            "status": 200,
-            "message": "Access success",
-            "user": data_estudiante
-        }
+            new_estudiante = data_estudiante.dict()
+            conn.execute(estudiantes.insert().values(new_estudiante))
+            conn.commit()
+            return {
+                "status": 200,
+                "message": "Access success",
+                "user": data_estudiante
+            }
+        else: 
+            return Response(status_code=400)
 
 
 def ingresar_estudiantee(estudiantes_auth):
     with engine.connect() as conn:
-        if (estudiantes_auth.correo != None):
-            result = conn.execute(estudiantes.select().where(
-                estudiantes.c.correo == estudiantes_auth.correo)).first()
-        if (estudiantes_auth.matricula != None):
-            result = conn.execute(estudiantes.select().where(
-                estudiantes.c.matricula == estudiantes_auth.matricula)).first()
-
-        if result != None:
-            print(result)
-            check_passw = check_password_hash(result[2], estudiantes_auth.contraseña)
-            if check_passw:
-                return {
-                    "status": 200,
-                    "message": "Access success",
-                    "token": write_token(estudiantes_auth.dict()),
-                    "user": get_estudiantee(result[0])
-                }
-            else:
-                return Response(status_code=HTTP_401_UNAUTHORIZED)
-        if (result == None):
-            print(result)
+        if validar_loginEstudiante(estudiantes_auth):
+            if (estudiantes_auth.correo != None):
+                result = conn.execute(estudiantes.select().where(
+                    estudiantes.c.correo == estudiantes_auth.correo)).first()
             if (estudiantes_auth.matricula != None):
-                student_by_miuv = get_user_uv(user=estudiantes_auth.matricula, password=estudiantes_auth.contraseña)
-                student_dic = json.loads(student_by_miuv)
+                result = conn.execute(estudiantes.select().where(
+                    estudiantes.c.matricula == estudiantes_auth.matricula)).first()
 
-                if "nombre" in student_dic:
-                    with engine.connect() as conn:
-                        new_estudiante = Estudiante
-                        new_estudiante.nombre = student_dic["nombre"]
-                        new_estudiante.telefono = student_dic["residence_information"]["teléfono"]
-                        new_estudiante.foto_perfil = student_dic["student_photo_profile"]
-                        new_estudiante.correo = student_dic["personal_information"]["correo_institucional"]
-                        new_estudiante.campus = student_dic["academic_information"]["campus"]
-                        new_estudiante.semestre = int(
-                            student_dic["academic_information"]["periodos_cursados"])
-                        new_estudiante.matricula = estudiantes_auth.matricula
-                        new_estudiante.contraseña = generate_password_hash(estudiantes_auth.contraseña, "pbkdf2:sha256:30", 30)
+            if result != None:
+                print(result)
+                check_passw = check_password_hash(result[2], estudiantes_auth.contraseña)
+                if check_passw:
+                    return {
+                        "status": 200,
+                        "message": "Access success",
+                        "token": write_token(estudiantes_auth.dict()),
+                        "user": get_estudiantee(result[0])
+                    }
+                else:
+                    return Response(status_code=HTTP_401_UNAUTHORIZED)
+            if (result == None):
+                print(result)
+                if (estudiantes_auth.matricula != None):
+                    student_by_miuv = get_user_uv(user=estudiantes_auth.matricula, password=estudiantes_auth.contraseña)
+                    student_dic = json.loads(student_by_miuv)
 
-                        # result_create = conn.execute(estudiantes.insert().values(new_estudiante))
+                    if "nombre" in student_dic:
+                        with engine.connect() as conn:
+                            new_estudiante = Estudiante
+                            new_estudiante.nombre = student_dic["nombre"]
+                            new_estudiante.telefono = student_dic["residence_information"]["teléfono"]
+                            new_estudiante.foto_perfil = student_dic["student_photo_profile"]
+                            new_estudiante.correo = student_dic["personal_information"]["correo_institucional"]
+                            new_estudiante.campus = student_dic["academic_information"]["campus"]
+                            new_estudiante.semestre = int(
+                                student_dic["academic_information"]["periodos_cursados"])
+                            new_estudiante.matricula = estudiantes_auth.matricula
+                            new_estudiante.contraseña = generate_password_hash(estudiantes_auth.contraseña, "pbkdf2:sha256:30", 30)
 
-                        result_create = conn.execute(estudiantes.insert().values(
-                            matricula=estudiantes_auth.matricula,
-                            contraseña=generate_password_hash(estudiantes_auth.contraseña, "pbkdf2:sha256:30", 30),
-                            nombre=student_dic["nombre"],
-                            correo=student_dic["personal_information"]["correo_institucional"],
-                            campus=student_dic["academic_information"]["campus"],
-                            semestre=int(
-                                student_dic["academic_information"]["periodos_cursados"]),
-                            telefono=student_dic["residence_information"]["teléfono"],
-                            foto_perfil=student_dic["student_photo_profile"],
-                        ))
-                        conn.commit()
-                        logging.info(
-                            f"Estudiante {new_estudiante.nombre} creado correctamente")
-                        if result_create:
-                            return {
-                                "status": 200,
-                                "message": "Access success",
-                                "token": write_token(estudiantes_auth.dict()),
-                                "user": result_create
-                            }
-                        else:
-                            return {
-                                "status": 404,
-                                "message": "User not found",
-                            }
+                            # result_create = conn.execute(estudiantes.insert().values(new_estudiante))
 
-            else:
-                return Response(status_code=HTTP_204_NO_CONTENT)
+                            result_create = conn.execute(estudiantes.insert().values(
+                                matricula=estudiantes_auth.matricula,
+                                contraseña=generate_password_hash(estudiantes_auth.contraseña, "pbkdf2:sha256:30", 30),
+                                nombre=student_dic["nombre"],
+                                correo=student_dic["personal_information"]["correo_institucional"],
+                                campus=student_dic["academic_information"]["campus"],
+                                semestre=int(
+                                    student_dic["academic_information"]["periodos_cursados"]),
+                                telefono=student_dic["residence_information"]["teléfono"],
+                                foto_perfil=student_dic["student_photo_profile"],
+                            ))
+                            conn.commit()
+                            logging.info(
+                                f"Estudiante {new_estudiante.nombre} creado correctamente")
+                            if result_create:
+                                return {
+                                    "status": 200,
+                                    "message": "Access success",
+                                    "token": write_token(estudiantes_auth.dict()),
+                                    "user": result_create
+                                }
+                            else:
+                                return {
+                                    "status": 404,
+                                    "message": "User not found",
+                                }
+
+                else:
+                    return Response(status_code=HTTP_204_NO_CONTENT)
+        else:
+            return Response(status_code=400)
