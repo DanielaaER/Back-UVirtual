@@ -8,6 +8,9 @@ import uuid
 from uvirtual.uv_library.cards_detection.uv_credential import is_uv_credential
 from uvirtual.uv_library.cards_detection.compare_card_photo_video import compare
 
+
+from schemas.archivos import Archivos
+from models.archivo import archivos
 archivosRouter = APIRouter()
 
 
@@ -127,3 +130,46 @@ def delete_file(type_file:str, name_file: str):
             "removed": False,
             "message": "File not found"
         }, status_code=404)
+
+@archivosRouter.post("/guardar/{id}")
+def save_files(id: int, file_credential: UploadFile = File(...),file_video: UploadFile = File(...)):
+    file_new_name = uuid.uuid4()
+    
+    imagen=["jpg","jpeg","png","gif"]
+    video=["avi","mp4","mkv"]
+    
+    makedirs('uploads', exist_ok=True)
+    makedirs('uploads/credential', exist_ok=True)
+    makedirs('uploads/photo', exist_ok=True)
+    makedirs('uploads/video', exist_ok=True)
+    
+    file_name_credential = pathlib.Path(file_credential.filename)
+    file_name_video = pathlib.Path(file_video.filename)
+
+    with engine.connect() as conn:
+        result = conn.execute(archivos.select().where(
+        archivos.c.matricula == id)).first()
+        if result:
+            
+            result = conn.execute(archivos.update().values(
+                matricula=id,
+                credencial=file_name_credential,
+                video=file_name_video,
+            ).where(archivos.c.matricula == matricula))
+
+            conn.commit()
+            result = conn.execute(docentes.select().where(
+                archivos.c.matricula == matricula)).first()
+
+            logging.info(
+                f"Archivos del user con ide: {matricula} actualizado correctamente")
+        return {
+                "status": 200,
+                "message": "Creado correctamente",
+                "credencial": file_name_credential,
+                "video": file_name_video
+            }
+        else:
+            return Response(status_code=HTTP_204_NO_CONTENT)    
+    else:
+        return Response(status_code=400)    
