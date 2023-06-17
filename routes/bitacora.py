@@ -39,7 +39,7 @@ def get_bitacora_by_id(id_clase: int):
         return Response(status_code=500)
 
 
-@bitacoraRouter.get("/bitacora/class/dia/{id_clase}/{dia}", response_model=List[Bitacora])
+@bitacoraRouter.get("/bitacora/class/dia/{id_clase}/{dia}")
 def get_bitacora_by_id(id_clase: int, dia: str):
     try:
 

@@ -76,7 +76,7 @@ def get_aula_hour_HorarioAulaa(id_aula):
         dias_semana = ['lunes', 'martes', 'miercoles',
             'jueves', 'viernes', 'sabado', 'domingo']
         dia_semana_nombre = dias_semana[dia_semana_num] #dia real
-        ia_semana_nombre = "lunes" # dia de prueba
+        #dia_semana_nombre = "lunes" # dia de prueba
         print("obtuvo las clases")
         if result:
             for row in result:
@@ -107,7 +107,7 @@ def get_aula_hour_HorarioAulaa(id_aula):
                     hora_fin = datetime.strptime(hora_fin_str, "%H:%M")
                     hora_fin = hora_fin.strftime('%H:%M')
                     ahora_time = ahora.strftime('%H:%M')  # hora real
-                    ahora_time = "11:00"  # hora de prueba
+                    #ahora_time = "11:00"  # hora de prueba
                     
                     print(ahora_time) 
                     ahora_time = datetime.strptime(ahora_time, '%H:%M')

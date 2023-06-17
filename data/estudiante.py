@@ -12,7 +12,7 @@ from functions_jwt import write_token, validate_token
 from werkzeug.security import generate_password_hash, check_password_hash
 import json
 
-from data.docentes import ingresar_docentee
+from data.docente import ingresar_docentee
 from data.clase import ingresar_clasees
 
 from validation.estudiante import validar_loginEstudiante, validar_Estudiante
