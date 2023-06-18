@@ -24,7 +24,7 @@ def get_bitacoraa():
     with engine.connect() as conn:
         result = conn.execute(bitacoras.select()).fetchall()
         print(result)
-        return list_bitacoraa(result)
+        return listaa(result)
     
 
 def get_list_bitacoraa(id_clase):
@@ -32,18 +32,53 @@ def get_list_bitacoraa(id_clase):
         result = conn.execute(bitacoras.select().where(
                     bitacoras.c.id_clase == id_clase)).fetchall()
         print(result)
-        return list_bitacoraa(result)
+        return listaa(result)
 
 
 def get_list_day_bitacoraa(id_clase, dia):
     with engine.connect() as conn:
         dia = datetime.strptime(dia, '%Y-%m-%d').date()
         print(dia)
+        # sql = text(
+        #     f"select id_clase, hora from bitacoras where id_clase='{id_clase}' and DATE(hora)='{dia}'")
+        # result = conn.execute(sql).fetchall()
+        # print(result)
         sql = text(
             f"select * from bitacoras where id_clase='{id_clase}' and DATE(hora)='{dia}'")
         result = conn.execute(sql).fetchall()
         print(result)
-        return list_bitacoraa(result)
+        
+        return listaa(result)
+
+
+def listaa(result):
+    with engine.connect() as conn:
+        if result:
+            bitacora_list = []
+            bitacora = ["USUARIO", "TIPO", "HORA"]
+            bitacora_list.append(bitacora)
+            for row in result:
+                
+                if row[2] == None:
+                    sql = text(f"select nombre from docentes where id='{row[3]}'")
+                    result = conn.execute(sql).first()
+                    print(result)
+                    bitacora_dict = [result, str(row[5]), str(row[6])]
+                else:
+                    sql = text(f"select nombre from estudiantes where id='{row[2]}'")
+                
+                result = conn.execute(sql).first()
+                result = result[0].strip("'")
+                print(result)
+                    
+                bitacora_dict = [str(result), str(row[5]), str(row[6])]
+                bitacora_list.append(bitacora_dict)
+                print("_____________")
+                logging.info(
+                    f"Se obtuvo información de las bitacoras")
+            return bitacora_list
+        else:
+            return Response(status_code=HTTP_204_NO_CONTENT)
 
 
 def get_list_class_bitacoraa(id_aula):
@@ -62,7 +97,7 @@ def get_list_classday_bitacoraa(id_aula, dia):
             f"select * from bitacoras where id_aula='{id_aula}' and DATE(hora)='{dia}'")
         result = conn.execute(sql).fetchall()
         print(result)
-        return list_bitacoraa(result)
+        return listaa(result)
 
 
 def list_bitacoraa(result):

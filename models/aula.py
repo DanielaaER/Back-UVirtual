@@ -8,6 +8,8 @@ aulas = Table("aulas", meta_data,
               Column('nombre', String(200)),
               Column('id_edificio', Integer, ForeignKey(
                   'edificios.id')),
+              Column('password', String(200)),
+              Column('id_aula', String(200)),
 
               )
 

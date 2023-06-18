@@ -17,7 +17,7 @@ def validar_user(user_Data):
 
 
 def validar_matricula(matricula):
-    patron = r'^([Zz][Ss]\d{8}|\d+)$'
+    patron = r'^(\d+|ZS\d{8}|aula\d{1,2}|\d)$'
     return bool(re.match(patron, matricula))
 
 

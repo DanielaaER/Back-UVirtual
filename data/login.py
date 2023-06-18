@@ -20,31 +20,53 @@ from data.estudiante import ingresar_estudiantee
 
 from data.docente import  login_docentee
 
+from data.aula import login_aula
+
+
 from validation.user import validar_user
 
 
 def login(user_Data):
     with engine.connect() as conn:
+        print("1")
         print(validar_user(user_Data))
         if validar_user(user_Data):
             result = None  # Inicializar result como None
             print(user_Data)
+            print("2")
             if user_Data.matricula[0].lower() in ['z', 's'] :
                 tipo = "Student"
                 print(tipo)
                 print(user_Data)
                 result = ingresar_estudiantee(user_Data)
             else:
-                tipo = "Docente"
-                print(tipo)
-                print("hello")
-                print("buscara")
+                if user_Data.matricula.lower().startswith('aula'):
+
+
+                    tipo = "Aula"
+                    print(tipo)
+                    print("hello")
+                    print("buscara")
+                    
+                    result = login_aula(user_Data)
+                    
+
+
+                    print("encontro")
+                    print(result)
+                else:
+                    tipo = "Docente"
+                    print(tipo)
+                    print("hello")
+                    print("buscara")
+                    
+                    user_Data.id=user_Data.matricula
+                    user_Data.matricula = None
+                    result = login_docentee(user_Data)
+                    print("encontro")
+                    print(result)
+            
                 
-                user_Data.id=user_Data.matricula
-                user_Data.matricula = None
-                result = login_docentee(user_Data)
-                print("encontro")
-                print(result)
                 
             if result is None:
                 print("..............................")

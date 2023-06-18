@@ -17,7 +17,7 @@ from data.bitacora import get_bitacoraa, get_list_bitacoraa, get_list_day_bitaco
 bitacoraRouter = APIRouter()
 
 
-@bitacoraRouter.get("/bitacora", response_model=List[Bitacora])
+@bitacoraRouter.get("/bitacora")
 def get_bitacora():
     try:
 
@@ -28,7 +28,7 @@ def get_bitacora():
         return Response(status_code=500)
 
 
-@bitacoraRouter.get("/bitacora/clase/{id_clase}", response_model=List[Bitacora])
+@bitacoraRouter.get("/bitacora/clase/{id_clase}")
 def get_bitacora_by_id(id_clase: int):
     try:
 
@@ -39,7 +39,7 @@ def get_bitacora_by_id(id_clase: int):
         return Response(status_code=500)
 
 
-@bitacoraRouter.get("/bitacora/class/dia/{id_clase}/{dia}", response_model=List[Bitacora])
+@bitacoraRouter.get("/bitacora/class/dia/{id_clase}/{dia}")
 def get_bitacora_by_id(id_clase: int, dia: str):
     try:
 
@@ -51,7 +51,7 @@ def get_bitacora_by_id(id_clase: int, dia: str):
         return Response(status_code=500)
 
 
-@bitacoraRouter.get("/bitacora/aula/{id_aula}", response_model=List[Bitacora])
+@bitacoraRouter.get("/bitacora/aula/{id_aula}")
 def get_bitacora_by_id(id_aula: int):
     try:
 
@@ -63,7 +63,7 @@ def get_bitacora_by_id(id_aula: int):
         return Response(status_code=500)
 
 
-@bitacoraRouter.get("/bitacora/dia/{id_aula}/{dia}", response_model=List[Bitacora])
+@bitacoraRouter.get("/bitacora/dia/{id_aula}/{dia}")
 def get_bitacora_by_id_day(id_aula: int, dia: str):
     try:
 

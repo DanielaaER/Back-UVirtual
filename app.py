@@ -1,8 +1,9 @@
 from fastapi import FastAPI
+
+from routes.edificio import edificioRouter
 from routes.login import loginRouter
 
 from routes.estudiante import estudianteRouter
-from routes.edificio import edificioRouter
 from routes.aula import aulaRouter
 from routes.clase import claseRouter
 from routes.docente import docenteRouter

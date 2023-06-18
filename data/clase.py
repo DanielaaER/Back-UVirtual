@@ -176,7 +176,9 @@ def ingresar_clasees(estudiantes_auth):
                                 print("aulas")
                                 conn.execute(aulas.insert().values(
                                     nombre=detalles["general"]["aula"],
-                                    id_edificio=edif.id
+                                    id_edificio=edif.id,
+                                    password="password",
+                                    id_aula="aula"+detalles["general"]["aula"],
                                     ))
 
                             conn.commit()
