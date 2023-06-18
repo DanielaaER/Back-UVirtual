@@ -15,7 +15,7 @@ from routes.bitacora import bitacoraRouter
 
 
 
-#from routes.archivos import archivosRouter
+from routes.archivos import archivosRouter
 
 
 from dotenv import load_dotenv
@@ -58,7 +58,7 @@ app.include_router(bitacoraRouter, tags=["Bitacoras"])
 app.include_router(horarioAulaRouter, tags=["Aula"])
 
 
-#app.include_router(archivosRouter, tags=["Archivos"])
+app.include_router(archivosRouter, tags=["Archivos"])
 
 
 if __name__ == "__main__":
